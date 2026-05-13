@@ -13,14 +13,14 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{
-  --ink:#1a1814;--ink-2:#4a4640;--ink-3:#8a8480;
-  --paper:#f8f4f0;--paper-2:#f0ece4;--paper-3:#e4ddd4;
-  --rule:rgba(26,24,20,0.10);--rule-2:rgba(26,24,20,0.06);
-  --red:#8b1a1a;--red-2:#a02020;--red-light:#fdf0f0;--red-border:rgba(139,26,26,0.2);
-  --amber:#7d5200;--amber-light:#fff8e8;--amber-border:rgba(125,82,0,0.2);
-  --blue:#1a4d8f;--blue-light:#e8eff8;--blue-border:rgba(26,77,143,0.2);
-  --green:#1a6b3c;--green-light:#e8f5ee;--green-border:rgba(26,107,60,0.2);
-  --radius:4px;--radius-lg:8px;--radius-xl:14px;
+ --ink:#1a1814;--ink-2:#4a4640;--ink-3:#8a8480;
+ --paper:#f8f4f0;--paper-2:#f0ece4;--paper-3:#e4ddd4;
+ --rule:rgba(26,24,20,0.10);--rule-2:rgba(26,24,20,0.06);
+ --red:#8b1a1a;--red-2:#a02020;--red-light:#fdf0f0;--red-border:rgba(139,26,26,0.2);
+ --amber:#7d5200;--amber-light:#fff8e8;--amber-border:rgba(125,82,0,0.2);
+ --blue:#1a4d8f;--blue-light:#e8eff8;--blue-border:rgba(26,77,143,0.2);
+ --green:#1a6b3c;--green-light:#e8f5ee;--green-border:rgba(26,107,60,0.2);
+ --radius:4px;--radius-lg:8px;--radius-xl:14px;
 }
 html{scroll-behavior:smooth;}
 body{font-family:'DM Sans',sans-serif;background:var(--paper);color:var(--ink);font-size:16px;line-height:1.7;}
@@ -135,7 +135,7 @@ header{border-bottom:1px solid var(--rule);padding:0 2rem;background:white;posit
 .pathogen-card{border:1px solid var(--rule);border-radius:var(--radius-lg);padding:1rem;background:var(--paper);}
 .pathogen-card h4{font-size:13px;font-weight:600;color:var(--ink);margin-bottom:0.5rem;display:flex;align-items:center;gap:6px;}
 .pathogen-card ul{list-style:none;font-size:12px;color:var(--ink-2);line-height:1.8;}
-.pathogen-card ul li::before{content:"·  ";}
+.pathogen-card ul li::before{content:"· ";}
 .home-btn{position:fixed;bottom:1.5rem;right:1.5rem;width:48px;height:48px;border-radius:50%;background:var(--ink);color:white;display:flex;align-items:center;justify-content:center;font-size:20px;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,0.2);transition:all 0.2s;z-index:999;}
 .home-btn:hover{background:var(--red);transform:scale(1.08);}
 footer{border-top:1px solid var(--rule);padding:2rem;text-align:center;font-size:12px;color:var(--ink-3);background:white;}
@@ -147,124 +147,124 @@ footer a{color:var(--ink-3);text-decoration:underline;text-underline-offset:3px;
 <body>
 
 <header>
-  <div class="header-inner">
-    <a class="logo" href="#"><div class="logo-icon">🛡️</div>Biosafety<span>SOP</span><span class="beta-badge">Beta</span></a>
-    <span class="header-by">Part of <a href="https://bhaley1.github.io/scivoice/" target="_blank">SciVoice</a> · By <a href="https://github.com/bhaley1" target="_blank">bhaley1</a></span>
-  </div>
+ <div class="header-inner">
+  <a class="logo" href="#"><div class="logo-icon">🛡️</div>Biosafety<span>SOP</span><span class="beta-badge">Beta</span></a>
+  <span class="header-by">Part of <a href="https://Anonymous.github.io/scivoice/" target="_blank">SciVoice</a> · By <a href="https://github.com/Anonymous" target="_blank">Anonymous</a></span>
+ </div>
 </header>
 
 <div class="beta-bar">
-  <strong>🧪 Beta Tool — Preliminary Guidelines Only.</strong> This tool generates <em>draft</em> SOPs for orientation and training purposes. All outputs <strong>must be reviewed, adapted, and formally approved by a certified biosafety officer</strong> at your facility before use in any laboratory. Do not use as a substitute for institutional biosafety review.
+ <strong>🧪 Beta Tool — Preliminary Guidelines Only.</strong> This tool generates <em>draft</em> SOPs for orientation and training purposes. All outputs <strong>must be reviewed, adapted, and formally approved by a certified biosafety officer</strong> at your facility before use in any laboratory. Do not use as a substitute for institutional biosafety review.
 </div>
 
 <div class="disclaimer-bar">
-  <strong>⚠️ Important:</strong> Based on <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank" style="color:inherit;font-weight:600">WHO Laboratory Biosafety Manual (4th ed., 2020)</a> and <a href="https://www.cdc.gov/labs/BMBL.html" target="_blank" style="color:inherit;font-weight:600">BMBL (6th ed.)</a>. Always consult your institutional biosafety committee and comply with local regulations.
+ <strong>⚠️ Important:</strong> Based on <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank" style="color:inherit;font-weight:600">WHO Laboratory Biosafety Manual (4th ed., 2020)</a> and <a href="https://www.cdc.gov/labs/BMBL.html" target="_blank" style="color:inherit;font-weight:600">BMBL (6th ed.)</a>. Always consult your institutional biosafety committee and comply with local regulations.
 </div>
 
 <div class="bsl3-notice">
-  <strong>🚫 BSL-3 and BSL-4 are NOT covered by this tool.</strong>
-  Work at BSL-3 (e.g. <em>Mycobacterium tuberculosis</em>, <em>Brucella</em> spp., West Nile virus, SARS-CoV-2 variants) and BSL-4 (e.g. Ebola, Marburg, Lassa, variola) requires <strong>specialized facility design, engineering controls, medical surveillance, regulatory authorization, and expert biosafety officer oversight</strong> that cannot be captured in a generic generated document. If you work at BSL-3 or BSL-4, contact your institutional biosafety committee directly for SOPs and do not use this tool.
+ <strong>🚫 BSL-3 and BSL-4 are NOT covered by this tool.</strong>
+ Work at BSL-3 (e.g. <em>Mycobacterium tuberculosis</em>, <em>Brucella</em> spp., West Nile virus, SARS-CoV-2 variants) and BSL-4 (e.g. Ebola, Marburg, Lassa, variola) requires <strong>specialized facility design, engineering controls, medical surveillance, regulatory authorization, and expert biosafety officer oversight</strong> that cannot be captured in a generic generated document. If you work at BSL-3 or BSL-4, contact your institutional biosafety committee directly for SOPs and do not use this tool.
 </div>
 
 <section class="hero">
-  <div class="hero-eyebrow">WHO-Based Biosafety SOP Generator</div>
-  <h1 id="heroTitle">Your language.<br>Your biosafety SOP.<br>Ready to use.</h1>
-  <div class="scope-note">✅ Covers BSL-1 and BSL-2 only — 22 languages</div>
-  <p class="hero-sub" id="heroSub">Generate a customizable biosafety SOP for BSL-1 or BSL-2 sample types, based on WHO Laboratory Biosafety Manual (4th ed., 2020) guidelines — in your language. Must be reviewed by your biosafety officer before use.</p>
-  <div class="hero-features">
-    <span class="feature-pill">🟢 BSL-1</span>
-    <span class="feature-pill">🟡 BSL-2</span>
-    <span class="feature-pill">📋 WHO LBM 4th ed.</span>
-    <span class="feature-pill">🌍 22 languages</span>
-    <span class="feature-pill">🖨️ Print / PDF</span>
-  </div>
+ <div class="hero-eyebrow">WHO-Based Biosafety SOP Generator</div>
+ <h1 id="heroTitle">Your language.<br>Your biosafety SOP.<br>Ready to use.</h1>
+ <div class="scope-note">✅ Covers BSL-1 and BSL-2 only — 22 languages</div>
+ <p class="hero-sub" id="heroSub">Generate a customizable biosafety SOP for BSL-1 or BSL-2 sample types, based on WHO Laboratory Biosafety Manual (4th ed., 2020) guidelines — in your language. Must be reviewed by your biosafety officer before use.</p>
+ <div class="hero-features">
+  <span class="feature-pill">🟢 BSL-1</span>
+  <span class="feature-pill">🟡 BSL-2</span>
+  <span class="feature-pill">📋 WHO LBM 4th ed.</span>
+  <span class="feature-pill">🌍 22 languages</span>
+  <span class="feature-pill">🖨️ Print / PDF</span>
+ </div>
 </section>
 
 <section class="lang-section">
-  <div class="lang-inner">
-    <div class="lang-prompt" id="langPrompt">SELECT YOUR LANGUAGE · CHOISISSEZ VOTRE LANGUE · SELECCIONE SU IDIOMA</div>
-    <div class="lang-grid" id="langGrid"></div>
-  </div>
+ <div class="lang-inner">
+  <div class="lang-prompt" id="langPrompt">SELECT YOUR LANGUAGE · CHOISISSEZ VOTRE LANGUE · SELECCIONE SU IDIOMA</div>
+  <div class="lang-grid" id="langGrid"></div>
+ </div>
 </section>
 
 <div id="appSection">
-  <div class="selected-bar"><div class="lang-name" id="langDisplay">English</div><button class="btn-change" id="btnChange" onclick="changeLang()">Change language</button></div>
+ <div class="selected-bar"><div class="lang-name" id="langDisplay">English</div><button class="btn-change" id="btnChange" onclick="changeLang()">Change language</button></div>
 
-  <div class="card">
-    <div class="card-header"><div class="step-num">1</div><h2 id="step1Title">Select sample type<span class="card-sub" id="step1Sub">What type of samples will this SOP cover?</span></h2></div>
-    <div class="card-body"><div class="option-grid" id="sampleTypeGrid"></div></div>
-  </div>
+ <div class="card">
+  <div class="card-header"><div class="step-num">1</div><h2 id="step1Title">Select sample type<span class="card-sub" id="step1Sub">What type of samples will this SOP cover?</span></h2></div>
+  <div class="card-body"><div class="option-grid" id="sampleTypeGrid"></div></div>
+ </div>
 
-  <div class="card">
-    <div class="card-header"><div class="step-num">2</div><h2 id="step2Title">Select biosafety level<span class="card-sub" id="step2Sub">BSL-1 or BSL-2 only — based on WHO risk group classification</span></h2></div>
-    <div class="card-body"><div class="option-grid" id="bslGrid"></div></div>
-  </div>
+ <div class="card">
+  <div class="card-header"><div class="step-num">2</div><h2 id="step2Title">Select biosafety level<span class="card-sub" id="step2Sub">BSL-1 or BSL-2 only — based on WHO risk group classification</span></h2></div>
+  <div class="card-body"><div class="option-grid" id="bslGrid"></div></div>
+ </div>
 
-  <div class="card">
-    <div class="card-header"><div class="step-num">3</div><h2 id="step3Title">Institution name (optional)<span class="card-sub" id="step3Sub">Appears in the SOP header</span></h2></div>
-    <div class="card-body">
-      <input type="text" class="institution-input" id="institutionInput" placeholder="e.g. National Public Health Laboratory">
-      <div class="error-box" id="errorBox"></div>
-      <button class="btn-generate" id="btnGenerate" onclick="generateSOP()"><span>🛡️</span><span id="btnGenerateText">Generate Biosafety SOP</span></button>
-    </div>
+ <div class="card">
+  <div class="card-header"><div class="step-num">3</div><h2 id="step3Title">Institution name (optional)<span class="card-sub" id="step3Sub">Appears in the SOP header</span></h2></div>
+  <div class="card-body">
+   <input type="text" class="institution-input" id="institutionInput" placeholder="e.g. National Public Health Laboratory">
+   <div class="error-box" id="errorBox"></div>
+   <button class="btn-generate" id="btnGenerate" onclick="generateSOP()"><span>🛡️</span><span id="btnGenerateText">Generate Biosafety SOP</span></button>
   </div>
+ </div>
 
-  <div id="sopOutput">
-    <div class="sop-toolbar">
-      <div class="sop-toolbar-title" id="sopToolbarTitle">Biosafety SOP</div>
-      <div class="sop-toolbar-btns">
-        <button class="btn-toolbar" onclick="window.print()">🖨️ <span id="btnPrint">Print / Save PDF</span></button>
-        <button class="btn-toolbar" onclick="copySOPText()">📋 <span id="btnCopy">Copy as text</span></button>
-      </div>
-    </div>
-    <div class="sop-doc" id="sopDoc"></div>
+ <div id="sopOutput">
+  <div class="sop-toolbar">
+   <div class="sop-toolbar-title" id="sopToolbarTitle">Biosafety SOP</div>
+   <div class="sop-toolbar-btns">
+    <button class="btn-toolbar" onclick="window.print()">🖨️ <span id="btnPrint">Print / Save PDF</span></button>
+    <button class="btn-toolbar" onclick="copySOPText()">📋 <span id="btnCopy">Copy as text</span></button>
+   </div>
   </div>
+  <div class="sop-doc" id="sopDoc"></div>
+ </div>
 </div>
 
 <footer>
-  <p>BiosafetySOP <span class="beta-badge" style="vertical-align:middle">Beta</span> — Based on <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO Laboratory Biosafety Manual (4th ed., 2020)</a> and <a href="https://www.cdc.gov/labs/BMBL.html" target="_blank">BMBL (6th ed.)</a>. BSL-1 and BSL-2 only. Part of <a href="https://bhaley1.github.io/scivoice/" target="_blank">SciVoice</a> · Open source project · <a href="https://github.com/bhaley1/scivoice/issues" target="_blank">Feedback</a></p>
+ <p>BiosafetySOP <span class="beta-badge" style="vertical-align:middle">Beta</span> — Based on <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO Laboratory Biosafety Manual (4th ed., 2020)</a> and <a href="https://www.cdc.gov/labs/BMBL.html" target="_blank">BMBL (6th ed.)</a>. BSL-1 and BSL-2 only. Part of <a href="https://Anonymous.github.io/scivoice/" target="_blank">SciVoice</a> · Open source project · <a href="https://github.com/Anonymous/scivoice/issues" target="_blank">Feedback</a></p>
 </footer>
 
-<a href="https://bhaley1.github.io/scivoice/" class="home-btn" aria-label="Back to SciVoice" title="Back to SciVoice">🏠</a>
+<a href="https://Anonymous.github.io/scivoice/" class="home-btn" aria-label="Back to SciVoice" title="Back to SciVoice">🏠</a>
 
 <script>
 const LANGS=[
-  {code:"en",native:"English",english:"English",dir:"ltr"},
-  {code:"fr",native:"Français",english:"French",dir:"ltr"},
-  {code:"es",native:"Español",english:"Spanish",dir:"ltr"},
-  {code:"pt",native:"Português",english:"Portuguese",dir:"ltr"},
-  {code:"it",native:"Italiano",english:"Italian",dir:"ltr"},
-  {code:"ar",native:"العربية",english:"Arabic",dir:"rtl"},
-  {code:"zh",native:"中文",english:"Mandarin",dir:"ltr"},
-  {code:"sw",native:"Kiswahili",english:"Swahili",dir:"ltr"},
-  {code:"am",native:"አማርኛ",english:"Amharic",dir:"ltr"},
-  {code:"hi",native:"हिन्दी",english:"Hindi",dir:"ltr"},
-  {code:"bn",native:"বাংলা",english:"Bengali",dir:"ltr"},
-  {code:"id",native:"Bahasa Indonesia",english:"Indonesian",dir:"ltr"},
-  {code:"uk",native:"Українська",english:"Ukrainian",dir:"ltr"},
-  {code:"ha",native:"Hausa",english:"Hausa",dir:"ltr"},
-  {code:"yo",native:"Yorùbá",english:"Yoruba",dir:"ltr"},
-  {code:"ln",native:"Lingála",english:"Lingala",dir:"ltr"},
-  {code:"mg",native:"Malagasy",english:"Malagasy",dir:"ltr"},
-  {code:"ne",native:"नेपाली",english:"Nepali",dir:"ltr"},
-  {code:"tl",native:"Tagalog",english:"Tagalog",dir:"ltr"},
-  {code:"rw",native:"Kinyarwanda",english:"Kinyarwanda",dir:"ltr"},
-  {code:"rn",native:"Ikirundi",english:"Kirundi",dir:"ltr"},
-  {code:"ny",native:"Chichewa",english:"Chichewa",dir:"ltr"},
+ {code:"en",native:"English",english:"English",dir:"ltr"},
+ {code:"fr",native:"Français",english:"French",dir:"ltr"},
+ {code:"es",native:"Español",english:"Spanish",dir:"ltr"},
+ {code:"pt",native:"Português",english:"Portuguese",dir:"ltr"},
+ {code:"it",native:"Italiano",english:"Italian",dir:"ltr"},
+ {code:"ar",native:"العربية",english:"Arabic",dir:"rtl"},
+ {code:"zh",native:"中文",english:"Mandarin",dir:"ltr"},
+ {code:"sw",native:"Kiswahili",english:"Swahili",dir:"ltr"},
+ {code:"am",native:"አማርኛ",english:"Amharic",dir:"ltr"},
+ {code:"hi",native:"हिन्दी",english:"Hindi",dir:"ltr"},
+ {code:"bn",native:"বাংলা",english:"Bengali",dir:"ltr"},
+ {code:"id",native:"Bahasa Indonesia",english:"Indonesian",dir:"ltr"},
+ {code:"uk",native:"Українська",english:"Ukrainian",dir:"ltr"},
+ {code:"ha",native:"Hausa",english:"Hausa",dir:"ltr"},
+ {code:"yo",native:"Yorùbá",english:"Yoruba",dir:"ltr"},
+ {code:"ln",native:"Lingála",english:"Lingala",dir:"ltr"},
+ {code:"mg",native:"Malagasy",english:"Malagasy",dir:"ltr"},
+ {code:"ne",native:"नेपाली",english:"Nepali",dir:"ltr"},
+ {code:"tl",native:"Tagalog",english:"Tagalog",dir:"ltr"},
+ {code:"rw",native:"Kinyarwanda",english:"Kinyarwanda",dir:"ltr"},
+ {code:"rn",native:"Ikirundi",english:"Kirundi",dir:"ltr"},
+ {code:"ny",native:"Chichewa",english:"Chichewa",dir:"ltr"},
 ];
 
 const UI={
-  en:{change:"Change language",step1Title:"Select sample type",step1Sub:"What type of samples will this SOP cover?",step2Title:"Select biosafety level",step2Sub:"BSL-1 or BSL-2 only — based on WHO risk group classification",step3Title:"Institution name (optional)",step3Sub:"Appears in the SOP header",institutionPlaceholder:"e.g. National Public Health Laboratory",generateBtn:"Generate Biosafety SOP",printBtn:"Print / Save PDF",copyBtn:"Copy as text",errNoSample:"Please select a sample type.",errNoBSL:"Please select a biosafety level.",sopTitle:"Standard Operating Procedure",sopSubtitle:"Biosafety & Laboratory Safety",metaDate:"Date",metaBSL:"Biosafety Level",metaSample:"Sample Type",metaInstitution:"Institution",metaVersion:"Version",metaRef:"Reference",betaDisclaimer:"BETA — PRELIMINARY GUIDELINES ONLY. Must be reviewed and approved by a certified biosafety officer before use.",disclaimer:"This SOP is generated as preliminary guidance based on WHO Laboratory Biosafety Manual (4th ed., 2020) and BMBL (6th ed.). It covers BSL-1 and BSL-2 only. <strong>It does not replace institution-specific SOPs, expert biosafety officer review, or local regulatory compliance.</strong> All staff must receive documented training before working with infectious materials.",bsl3Warning:"BSL-3 and BSL-4 are NOT covered by this tool. These levels involve Risk Group 3 and 4 pathogens (e.g. M. tuberculosis, Brucella, Ebola, Marburg) and require specialized containment facilities, engineering controls, regulatory authorization, and expert biosafety officer oversight beyond the scope of this document.",sections:{scope:"Scope, Purpose & Pathogen Reference",ppe:"Personal Protective Equipment (PPE)",access:"Laboratory Access & Containment",decon:"Decontamination Procedures",spill:"Spill Response",waste:"Waste Disposal",exposure:"Exposure & Incident Response",training:"Training Requirements",refs:"References & Approval"},ppe_table_headers:["PPE Item","Requirement","Notes"],decon_agents:["Agent","Concentration","Contact Time","Application"],required:"Required",optional:"Recommended",sig_preparedBy:"Prepared by",sig_reviewedBy:"Reviewed by (Biosafety Officer)",sig_approvedBy:"Approved by (Lab Director)",sig_date:"Date",toolbarTitle:"Biosafety SOP",copyDone:"Copied!",bsl_desc:{bsl1:"WHO Risk Group 2 / BSL-1: Unlikely to cause human disease. Minimal hazard to laboratory workers and community.",bsl2:"WHO Risk Group 2 / BSL-2: Can cause human disease but unlikely to be a serious hazard; effective prophylaxis or treatment available."}},
-  fr:{change:"Changer de langue",step1Title:"Sélectionnez le type d\u2019échantillon",step1Sub:"Quel type d\u2019échantillons cette SOP couvrira-t-elle\u00a0?",step2Title:"Sélectionnez le niveau de biosécurité",step2Sub:"NSB-1 ou NSB-2 uniquement — classification des groupes de risque de l\u2019OMS",step3Title:"Nom de l\u2019institution (optionnel)",step3Sub:"Apparaît dans l\u2019en-tête de la SOP",institutionPlaceholder:"ex. Laboratoire national de santé publique",generateBtn:"Générer la SOP de biosécurité",printBtn:"Imprimer / Enregistrer PDF",copyBtn:"Copier en texte",errNoSample:"Veuillez sélectionner un type d\u2019échantillon.",errNoBSL:"Veuillez sélectionner un niveau de biosécurité.",sopTitle:"Procédure Opératoire Standard",sopSubtitle:"Biosécurité et Sécurité en Laboratoire",metaDate:"Date",metaBSL:"Niveau de biosécurité",metaSample:"Type d\u2019échantillon",metaInstitution:"Institution",metaVersion:"Version",metaRef:"Référence",betaDisclaimer:"BÊTA — DIRECTIVES PRÉLIMINAIRES UNIQUEMENT. Doit être examiné et approuvé par un responsable de biosécurité certifié avant utilisation.",disclaimer:"Cette SOP est générée à titre d\u2019orientation préliminaire sur la base du Manuel de biosécurité en laboratoire de l\u2019OMS (4e éd., 2020). Elle couvre les NSB-1 et NSB-2 uniquement. Elle ne remplace pas les SOP spécifiques à l\u2019institution, l\u2019expertise d\u2019un responsable de biosécurité, ni la réglementation locale.",bsl3Warning:"Les niveaux NSB-3 et NSB-4 ne sont pas couverts par cet outil. Ces niveaux impliquent des pathogènes des groupes de risque 3 et 4 et nécessitent des installations spécialisées, une autorisation réglementaire et une supervision experte.",sections:{scope:"Portée, objectif et référence des pathogènes",ppe:"Équipement de protection individuelle (EPI)",access:"Accès au laboratoire et confinement",decon:"Procédures de décontamination",spill:"Intervention en cas de déversement",waste:"Élimination des déchets",exposure:"Réponse aux expositions et incidents",training:"Exigences de formation",refs:"Références et approbation"},ppe_table_headers:["EPI","Exigence","Notes"],decon_agents:["Agent","Concentration","Temps de contact","Application"],required:"Obligatoire",optional:"Recommandé",sig_preparedBy:"Préparé par",sig_reviewedBy:"Examiné par (Responsable biosécurité)",sig_approvedBy:"Approuvé par (Directeur de laboratoire)",sig_date:"Date",toolbarTitle:"SOP de biosécurité",copyDone:"Copié\u00a0!",bsl_desc:{bsl1:"Groupe de risque 1 OMS\u00a0: Peu susceptible de causer une maladie chez l\u2019homme. Risque minimal.",bsl2:"Groupe de risque 2 OMS\u00a0: Peut causer une maladie chez l\u2019homme mais peu susceptible d\u2019être un danger grave; prophylaxie ou traitement efficace disponible."}},
-  es:{change:"Cambiar idioma",step1Title:"Seleccione el tipo de muestra",step1Sub:"¿Qué tipo de muestras cubrirá este SOP?",step2Title:"Seleccione el nivel de bioseguridad",step2Sub:"NSB-1 o NSB-2 únicamente — clasificación de grupos de riesgo de la OMS",step3Title:"Nombre de la institución (opcional)",step3Sub:"Aparece en el encabezado del SOP",institutionPlaceholder:"ej. Laboratorio Nacional de Salud Pública",generateBtn:"Generar SOP de bioseguridad",printBtn:"Imprimir / Guardar PDF",copyBtn:"Copiar como texto",errNoSample:"Por favor seleccione un tipo de muestra.",errNoBSL:"Por favor seleccione un nivel de bioseguridad.",sopTitle:"Procedimiento Operativo Estándar",sopSubtitle:"Bioseguridad y Seguridad en Laboratorio",metaDate:"Fecha",metaBSL:"Nivel de bioseguridad",metaSample:"Tipo de muestra",metaInstitution:"Institución",metaVersion:"Versión",metaRef:"Referencia",betaDisclaimer:"BETA — PAUTAS PRELIMINARES ÚNICAMENTE. Debe ser revisado y aprobado por un oficial de bioseguridad certificado antes de su uso.",disclaimer:"Esta SOP se genera como orientación preliminar basada en el Manual de Bioseguridad en Laboratorio de la OMS (4.ª ed., 2020) y el BMBL (6.ª ed.). Cubre solo NSB-1 y NSB-2. <strong>No reemplaza SOPs específicos de la institución, revisión experta de oficiales de bioseguridad, ni el cumplimiento de regulaciones locales.</strong> Todo el personal debe recibir capacitación documentada antes de trabajar con materiales infecciosos.",bsl3Warning:"Los niveles NSB-3 y NSB-4 NO están cubiertos por esta herramienta. Estos niveles involucran patógenos de los grupos de riesgo 3 y 4 (por ejemplo, M. tuberculosis, Brucella, Ébola, Marburg) y requieren instalaciones de contención especializadas, controles de ingeniería, autorización regulatoria y supervisión experta de oficiales de bioseguridad que están más allá del alcance de este documento.",sections:{scope:"Alcance, propósito y referencia de patógenos",ppe:"Equipo de protección personal (EPP)",access:"Acceso al laboratorio y contención",decon:"Procedimientos de descontaminación",spill:"Respuesta a derrames",waste:"Eliminación de residuos",exposure:"Respuesta a exposiciones e incidentes",training:"Requisitos de capacitación",refs:"Referencias y aprobación"},ppe_table_headers:["EPP","Requisito","Notas"],decon_agents:["Agente","Concentración","Tiempo de contacto","Aplicación"],required:"Obligatorio",optional:"Recomendado",sig_preparedBy:"Preparado por",sig_reviewedBy:"Revisado por (Oficial de bioseguridad)",sig_approvedBy:"Aprobado por (Director de laboratorio)",sig_date:"Fecha",toolbarTitle:"SOP de bioseguridad",copyDone:"¡Copiado!",bsl_desc:{bsl1:"Grupo de riesgo 1 OMS: Poco probable que cause enfermedad en humanos. Riesgo mínimo.",bsl2:"Grupo de riesgo 2 OMS: Puede causar enfermedad humana pero poco probable que sea un peligro grave; profilaxis o tratamiento eficaz disponible."}},
-  pt:{change:"Mudar idioma",step1Title:"Selecione o tipo de amostra",step1Sub:"Que tipo de amostras este SOP irá cobrir?",step2Title:"Selecione o nível de biossegurança",step2Sub:"NBS-1 ou NBS-2 apenas — classificação de grupos de risco da OMS",step3Title:"Nome da instituição (opcional)",step3Sub:"Aparece no cabeçalho do SOP",institutionPlaceholder:"ex. Laboratório Nacional de Saúde Pública",generateBtn:"Gerar SOP de biossegurança",printBtn:"Imprimir / Guardar PDF",copyBtn:"Copiar como texto",errNoSample:"Por favor selecione um tipo de amostra.",errNoBSL:"Por favor selecione um nível de biossegurança.",sopTitle:"Procedimento Operacional Padrão",sopSubtitle:"Biossegurança e Segurança em Laboratório",metaDate:"Data",metaBSL:"Nível de biossegurança",metaSample:"Tipo de amostra",metaInstitution:"Instituição",metaVersion:"Versão",metaRef:"Referência",betaDisclaimer:"BETA — ORIENTAÇÕES PRELIMINARES APENAS. Deve ser revisto e aprovado por um responsável de biossegurança certificado antes de ser utilizado.",disclaimer:"Este SOP é gerado como orientação preliminar com base no Manual de Biossegurança em Laboratório da OMS (4.ª ed., 2020). Cobre apenas NBS-1 e NBS-2. Não substitui SOPs institucionais, revisão especializada nem regulamentação local.",bsl3Warning:"Os níveis NBS-3 e NBS-4 NÃO são cobertos por esta ferramenta. Requerem instalações especializadas, autorização regulatória e supervisão especializada.",sections:{scope:"Âmbito, objetivo e referência de agentes patogénicos",ppe:"Equipamento de proteção individual (EPI)",access:"Acesso ao laboratório e contenção",decon:"Procedimentos de descontaminação",spill:"Resposta a derrames",waste:"Eliminação de resíduos",exposure:"Resposta a exposições e incidentes",training:"Requisitos de formação",refs:"Referências e aprovação"},ppe_table_headers:["EPI","Requisito","Notas"],decon_agents:["Agente","Concentração","Tempo de contacto","Aplicação"],required:"Obrigatório",optional:"Recomendado",sig_preparedBy:"Preparado por",sig_reviewedBy:"Revisto por (Responsável de biossegurança)",sig_approvedBy:"Aprovado por (Diretor de laboratório)",sig_date:"Data",toolbarTitle:"SOP de biossegurança",copyDone:"Copiado!",bsl_desc:{bsl1:"Grupo de risco 1 OMS: Pouco suscetível de causar doença em humanos. Risco mínimo.",bsl2:"Grupo de risco 2 OMS: Pode causar doença humana mas pouco provável que seja um risco grave; profilaxia ou tratamento eficaz disponível."}},
-  ar:{change:"تغيير اللغة",step1Title:"اختر نوع العينة",step1Sub:"ما نوع العينات التي سيغطيها هذا الإجراء؟",step2Title:"اختر مستوى السلامة البيولوجية",step2Sub:"المستوى 1 أو 2 فقط — تصنيف منظمة الصحة العالمية",step3Title:"اسم المؤسسة (اختياري)",step3Sub:"يظهر في رأس الإجراء",institutionPlaceholder:"مثال: المختبر الوطني للصحة العامة",generateBtn:"إنشاء إجراء السلامة البيولوجية",printBtn:"طباعة / حفظ PDF",copyBtn:"نسخ كنص",errNoSample:"يرجى تحديد نوع العينة.",errNoBSL:"يرجى تحديد مستوى السلامة البيولوجية.",sopTitle:"إجراء التشغيل القياسي",sopSubtitle:"السلامة البيولوجية وسلامة المختبر",metaDate:"التاريخ",metaBSL:"مستوى السلامة البيولوجية",metaSample:"نوع العينة",metaInstitution:"المؤسسة",metaVersion:"الإصدار",metaRef:"المرجع",betaDisclaimer:"نسخة تجريبية — إرشادات أولية فقط. يجب مراجعتها والموافقة عليها من قبل مسؤول السلامة البيولوجية المعتمد قبل الاستخدام.",disclaimer:"يستند هذا الإجراء إلى دليل السلامة البيولوجية في المختبر لمنظمة الصحة العالمية (الطبعة الرابعة، 2020). يغطي المستويين 1 و2 فقط. لا يُغني عن المراجعة المؤسسية والمتخصصة.",bsl3Warning:"المستويان 3 و4 غير مشمولَين بهذه الأداة. يتطلبان منشآت متخصصة وترخيصاً تنظيمياً وإشرافاً متخصصاً.",sections:{scope:"النطاق والغرض ومرجع مسببات الأمراض",ppe:"معدات الحماية الشخصية",access:"الوصول إلى المختبر والاحتواء",decon:"إجراءات التطهير",spill:"الاستجابة للانسكابات",waste:"التخلص من النفايات",exposure:"الاستجابة للتعرض والحوادث",training:"متطلبات التدريب",refs:"المراجع والموافقة"},ppe_table_headers:["معدة الحماية","المتطلب","ملاحظات"],decon_agents:["العامل","التركيز","وقت التلامس","التطبيق"],required:"مطلوب",optional:"موصى به",sig_preparedBy:"أُعدَّ بواسطة",sig_reviewedBy:"تمت المراجعة (مسؤول السلامة)",sig_approvedBy:"تمت الموافقة (مدير المختبر)",sig_date:"التاريخ",toolbarTitle:"إجراء السلامة البيولوجية",copyDone:"تم النسخ!",bsl_desc:{bsl1:"مجموعة الخطر 1 (منظمة الصحة العالمية): لا يُعرف بأنه يسبب مرضاً للإنسان. خطر ضئيل.",bsl2:"مجموعة الخطر 2 (منظمة الصحة العالمية): يمكن أن يسبب مرضاً للإنسان لكنه غير مرجح أن يكون خطراً بالغاً؛ يتوفر علاج أو وقاية فعّالة."}},
-  zh:{change:"更换语言",step1Title:"选择样品类型",step1Sub:"此SOP将涵盖哪类样品？",step2Title:"选择生物安全级别",step2Sub:"仅BSL-1或BSL-2 — 基于WHO危险组分类",step3Title:"机构名称（可选）",step3Sub:"显示在SOP标题中",institutionPlaceholder:"例如：国家公共卫生实验室",generateBtn:"生成生物安全SOP",printBtn:"打印/保存PDF",copyBtn:"复制为文本",errNoSample:"请选择样品类型。",errNoBSL:"请选择生物安全级别。",sopTitle:"标准操作程序",sopSubtitle:"生物安全与实验室安全",metaDate:"日期",metaBSL:"生物安全级别",metaSample:"样品类型",metaInstitution:"机构",metaVersion:"版本",metaRef:"参考文献",betaDisclaimer:"测试版 — 仅供初步参考。使用前须经认证生物安全官员审查批准。",disclaimer:"本SOP基于WHO《实验室生物安全手册》（第4版，2020年）生成，仅涵盖BSL-1和BSL-2。不替代机构专项SOP、专业审查或地方法规合规。",bsl3Warning:"本工具不涵盖BSL-3和BSL-4。这些级别需要专业设施、监管授权和专家监督。",sections:{scope:"范围、目的与病原体参考",ppe:"个人防护装备（PPE）",access:"实验室准入与防护",decon:"去污程序",spill:"溢洒应急处理",waste:"废物处置",exposure:"暴露及事件响应",training:"培训要求",refs:"参考文献与审批"},ppe_table_headers:["防护装备","要求","备注"],decon_agents:["消毒剂","浓度","接触时间","使用方法"],required:"必须",optional:"建议",sig_preparedBy:"编制人",sig_reviewedBy:"审核人（生物安全官员）",sig_approvedBy:"批准人（实验室主任）",sig_date:"日期",toolbarTitle:"生物安全SOP",copyDone:"已复制！",bsl_desc:{bsl1:"WHO危险组1/BSL-1：不大可能引起人类疾病。危害极小。",bsl2:"WHO危险组2/BSL-2：可引起人类疾病，但不大可能成为严重危害；可获得有效预防或治疗。"}},
-  sw:{change:"Badilisha lugha",step1Title:"Chagua aina ya sampuli",step1Sub:"SOP hii itashughulikia aina gani ya sampuli?",step2Title:"Chagua kiwango cha usalama wa kibiolojia",step2Sub:"BSL-1 au BSL-2 peke yake — kulingana na WHO",step3Title:"Jina la taasisi (si lazima)",step3Sub:"Linaonekana katika kichwa cha SOP",institutionPlaceholder:"mf. Maabara ya Kitaifa ya Afya ya Umma",generateBtn:"Tengeneza SOP ya Usalama wa Kibiolojia",printBtn:"Chapisha / Hifadhi PDF",copyBtn:"Nakili kama maandishi",errNoSample:"Tafadhali chagua aina ya sampuli.",errNoBSL:"Tafadhali chagua kiwango cha usalama.",sopTitle:"Utaratibu wa Uendeshaji wa Kawaida",sopSubtitle:"Usalama wa Kibiolojia na Usalama wa Maabara",metaDate:"Tarehe",metaBSL:"Kiwango cha Usalama wa Kibiolojia",metaSample:"Aina ya Sampuli",metaInstitution:"Taasisi",metaVersion:"Toleo",metaRef:"Rejea",betaDisclaimer:"BETA — MWONGOZO WA AWALI TU. Lazima upitiwe na kupitishwa na afisa wa usalama wa kibiolojia aliyeidhinishwa kabla ya matumizi.",disclaimer:"SOP hii inategemea Mwongozo wa WHO wa Usalama wa Maabara (toleo la 4, 2020). Inashughulikia BSL-1 na BSL-2 tu. Haibadilishi SOP za taasisi, ukaguzi wa wataalamu, au sheria za ndani.",bsl3Warning:"BSL-3 na BSL-4 hazishughulikiwi na zana hii. Zinahitaji vifaa maalum, idhini ya udhibiti, na usimamizi wa wataalamu.",sections:{scope:"Upeo, Madhumuni na Rejea ya Vimelea",ppe:"Vifaa vya Kinga ya Kibinafsi (PPE)",access:"Ufikiaji wa Maabara na Kuzuia",decon:"Taratibu za Utakasaji",spill:"Kukabiliana na Kumwagika",waste:"Utupaji wa Taka",exposure:"Kukabiliana na Mfiduo na Matukio",training:"Mahitaji ya Mafunzo",refs:"Marejeo na Idhini"},ppe_table_headers:["Kifaa cha Kinga","Hitaji","Maelezo"],decon_agents:["Wakala","Mkusanyiko","Muda wa Mawasiliano","Matumizi"],required:"Lazima",optional:"Inashauriwa",sig_preparedBy:"Imetayarishwa na",sig_reviewedBy:"Imepitishwa na (Afisa wa Usalama)",sig_approvedBy:"Imeidhinishwa na (Mkurugenzi wa Maabara)",sig_date:"Tarehe",toolbarTitle:"SOP ya Usalama wa Kibiolojia",copyDone:"Imenakiliwa!",bsl_desc:{bsl1:"Kundi la Hatari 1 la WHO/BSL-1: Haijulikani kusababisha ugonjwa kwa binadamu. Hatari ndogo sana.",bsl2:"Kundi la Hatari 2 la WHO/BSL-2: Inaweza kusababisha magonjwa kwa binadamu lakini si hatari kubwa; matibabu au kinga inapatikana."}},
-  hi:{change:"भाषा बदलें",step1Title:"नमूना प्रकार चुनें",step1Sub:"यह SOP किस प्रकार के नमूनों को कवर करेगी?",step2Title:"बायोसेफ्टी स्तर चुनें",step2Sub:"केवल BSL-1 या BSL-2 — WHO जोखिम समूह वर्गीकरण",step3Title:"संस्था का नाम (वैकल्पिक)",step3Sub:"SOP हेडर में दिखाई देता है",institutionPlaceholder:"जैसे: राष्ट्रीय जन स्वास्थ्य प्रयोगशाला",generateBtn:"बायोसेफ्टी SOP बनाएं",printBtn:"प्रिंट / PDF सहेजें",copyBtn:"टेक्स्ट के रूप में कॉपी करें",errNoSample:"कृपया नमूना प्रकार चुनें।",errNoBSL:"कृपया बायोसेफ्टी स्तर चुनें।",sopTitle:"मानक संचालन प्रक्रिया",sopSubtitle:"बायोसेफ्टी और प्रयोगशाला सुरक्षा",metaDate:"दिनांक",metaBSL:"बायोसेफ्टी स्तर",metaSample:"नमूना प्रकार",metaInstitution:"संस्था",metaVersion:"संस्करण",metaRef:"संदर्भ",betaDisclaimer:"बीटा — केवल प्रारंभिक दिशानिर्देश। उपयोग से पहले प्रमाणित बायोसेफ्टी अधिकारी द्वारा समीक्षा और अनुमोदन आवश्यक।",disclaimer:"यह SOP WHO प्रयोगशाला जैव सुरक्षा मैनुअल (4वां संस्करण, 2020) पर आधारित है। केवल BSL-1 और BSL-2 कवर करती है। संस्थागत SOPs या विशेषज्ञ समीक्षा का विकल्प नहीं।",bsl3Warning:"BSL-3 और BSL-4 इस टूल द्वारा कवर नहीं किए जाते। इनके लिए विशेष सुविधाएं, नियामक प्राधिकरण और विशेषज्ञ पर्यवेक्षण आवश्यक है।",sections:{scope:"दायरा, उद्देश्य और रोगजनक संदर्भ",ppe:"व्यक्तिगत सुरक्षा उपकरण (PPE)",access:"प्रयोगशाला पहुंच और नियंत्रण",decon:"विसंदूषण प्रक्रियाएं",spill:"रिसाव प्रतिक्रिया",waste:"अपशिष्ट निपटान",exposure:"जोखिम प्रतिक्रिया",training:"प्रशिक्षण आवश्यकताएं",refs:"संदर्भ और अनुमोदन"},ppe_table_headers:["PPE आइटम","आवश्यकता","नोट्स"],decon_agents:["एजेंट","सांद्रता","संपर्क समय","अनुप्रयोग"],required:"आवश्यक",optional:"अनुशंसित",sig_preparedBy:"तैयार किया गया",sig_reviewedBy:"समीक्षा की गई (बायोसेफ्टी अधिकारी)",sig_approvedBy:"अनुमोदित (प्रयोगशाला निदेशक)",sig_date:"दिनांक",toolbarTitle:"बायोसेफ्टी SOP",copyDone:"कॉपी हो गया!",bsl_desc:{bsl1:"WHO जोखिम समूह 1/BSL-1: मनुष्यों में रोग उत्पन्न करने की संभावना नहीं। न्यूनतम खतरा।",bsl2:"WHO जोखिम समूह 2/BSL-2: मानव रोग उत्पन्न कर सकता है लेकिन गंभीर खतरा होने की संभावना नहीं; प्रभावी उपचार उपलब्ध।"}},
-  bn:{change:"ভাষা পরিবর্তন করুন",step1Title:"নমুনার ধরন নির্বাচন করুন",step1Sub:"এই SOP কোন ধরনের নমুনা কভার করবে?",step2Title:"বায়োসেফটি স্তর নির্বাচন করুন",step2Sub:"শুধুমাত্র BSL-1 বা BSL-2 — WHO ঝুঁকি গোষ্ঠী শ্রেণিবিভাগ",step3Title:"প্রতিষ্ঠানের নাম (ঐচ্ছিক)",step3Sub:"SOP শিরোনামে প্রদর্শিত হয়",institutionPlaceholder:"যেমন: জাতীয় জনস্বাস্থ্য পরীক্ষাগার",generateBtn:"বায়োসেফটি SOP তৈরি করুন",printBtn:"প্রিন্ট / PDF সংরক্ষণ",copyBtn:"টেক্সট কপি করুন",errNoSample:"অনুগ্রহ করে নমুনার ধরন নির্বাচন করুন।",errNoBSL:"অনুগ্রহ করে বায়োসেফটি স্তর নির্বাচন করুন।",sopTitle:"আদর্শ পরিচালনা পদ্ধতি",sopSubtitle:"বায়োসেফটি ও ল্যাবরেটরি নিরাপত্তা",metaDate:"তারিখ",metaBSL:"বায়োসেফটি স্তর",metaSample:"নমুনার ধরন",metaInstitution:"প্রতিষ্ঠান",metaVersion:"সংস্করণ",metaRef:"রেফারেন্স",betaDisclaimer:"বেটা — শুধুমাত্র প্রাথমিক নির্দেশিকা। ব্যবহারের আগে প্রত্যয়িত বায়োসেফটি কর্মকর্তার অনুমোদন প্রয়োজন।",disclaimer:"এই SOP WHO ল্যাবরেটরি বায়োসেফটি ম্যানুয়াল (৪র্থ সংস্করণ, ২০২০) এর উপর ভিত্তি করে। শুধুমাত্র BSL-1 এবং BSL-2 কভার করে। প্রাতিষ্ঠানিক SOP বা বিশেষজ্ঞ পর্যালোচনার বিকল্প নয়।",bsl3Warning:"BSL-3 এবং BSL-4 এই টুলে অন্তর্ভুক্ত নয়। এগুলির জন্য বিশেষ সুবিধা, নিয়ন্ত্রক অনুমোদন এবং বিশেষজ্ঞ তত্ত্বাবধান প্রয়োজন।",sections:{scope:"পরিধি, উদ্দেশ্য ও রোগজীবাণু রেফারেন্স",ppe:"ব্যক্তিগত সুরক্ষামূলক সরঞ্জাম",access:"ল্যাবরেটরি প্রবেশাধিকার",decon:"দূষণমুক্তকরণ পদ্ধতি",spill:"ছড়িয়ে পড়া মোকাবেলা",waste:"বর্জ্য নিষ্পত্তি",exposure:"এক্সপোজার প্রতিক্রিয়া",training:"প্রশিক্ষণের প্রয়োজনীয়তা",refs:"রেফারেন্স ও অনুমোদন"},ppe_table_headers:["PPE আইটেম","প্রয়োজনীয়তা","নোট"],decon_agents:["এজেন্ট","ঘনত্ব","যোগাযোগ সময়","প্রয়োগ"],required:"প্রয়োজনীয়",optional:"সুপারিশকৃত",sig_preparedBy:"প্রস্তুতকারী",sig_reviewedBy:"পর্যালোচক (বায়োসেফটি কর্মকর্তা)",sig_approvedBy:"অনুমোদনকারী (ল্যাব পরিচালক)",sig_date:"তারিখ",toolbarTitle:"বায়োসেফটি SOP",copyDone:"কপি হয়েছে!",bsl_desc:{bsl1:"WHO ঝুঁকি গোষ্ঠী 1/BSL-1: মানুষের মধ্যে রোগ সৃষ্টির সম্ভাবনা নেই। ন্যূনতম বিপদ।",bsl2:"WHO ঝুঁকি গোষ্ঠী 2/BSL-2: মানব রোগ সৃষ্টি করতে পারে তবে গুরুতর বিপদ হওয়ার সম্ভাবনা নেই; কার্যকর চিকিৎসা পাওয়া যায়।"}},
-  id:{change:"Ganti bahasa",step1Title:"Pilih jenis sampel",step1Sub:"Jenis sampel apa yang akan dicakup SOP ini?",step2Title:"Pilih tingkat biosafety",step2Sub:"Hanya BSL-1 atau BSL-2 — berdasarkan klasifikasi WHO",step3Title:"Nama institusi (opsional)",step3Sub:"Muncul di header SOP",institutionPlaceholder:"mis. Laboratorium Kesehatan Masyarakat Nasional",generateBtn:"Buat SOP Biosafety",printBtn:"Cetak / Simpan PDF",copyBtn:"Salin sebagai teks",errNoSample:"Harap pilih jenis sampel.",errNoBSL:"Harap pilih tingkat biosafety.",sopTitle:"Prosedur Operasi Standar",sopSubtitle:"Biosafety dan Keselamatan Laboratorium",metaDate:"Tanggal",metaBSL:"Tingkat Biosafety",metaSample:"Jenis Sampel",metaInstitution:"Institusi",metaVersion:"Versi",metaRef:"Referensi",betaDisclaimer:"BETA — PANDUAN AWAL SAJA. Harus ditinjau dan disetujui oleh petugas biosafety bersertifikat sebelum digunakan.",disclaimer:"SOP ini didasarkan pada Manual Biosafety Laboratorium WHO (edisi ke-4, 2020). Hanya mencakup BSL-1 dan BSL-2. Tidak menggantikan SOP institusional atau tinjauan ahli.",bsl3Warning:"BSL-3 dan BSL-4 TIDAK dicakup oleh alat ini. Memerlukan fasilitas khusus, otorisasi regulasi, dan pengawasan ahli.",sections:{scope:"Ruang Lingkup, Tujuan & Referensi Patogen",ppe:"Alat Pelindung Diri (APD)",access:"Akses Laboratorium & Penahanan",decon:"Prosedur Dekontaminasi",spill:"Penanganan Tumpahan",waste:"Pembuangan Limbah",exposure:"Respons Paparan & Insiden",training:"Persyaratan Pelatihan",refs:"Referensi & Persetujuan"},ppe_table_headers:["APD","Persyaratan","Catatan"],decon_agents:["Agen","Konsentrasi","Waktu Kontak","Aplikasi"],required:"Wajib",optional:"Direkomendasikan",sig_preparedBy:"Disiapkan oleh",sig_reviewedBy:"Ditinjau oleh (Petugas Biosafety)",sig_approvedBy:"Disetujui oleh (Direktur Lab)",sig_date:"Tanggal",toolbarTitle:"SOP Biosafety",copyDone:"Disalin!",bsl_desc:{bsl1:"Kelompok Risiko 1 WHO/BSL-1: Tidak menyebabkan penyakit pada manusia. Bahaya minimal.",bsl2:"Kelompok Risiko 2 WHO/BSL-2: Dapat menyebabkan penyakit manusia tetapi tidak mungkin menjadi bahaya serius; pengobatan efektif tersedia."}},
-  uk:{change:"Змінити мову",step1Title:"Виберіть тип зразка",step1Sub:"Які зразки охоплюватиме цей SOP?",step2Title:"Виберіть рівень біобезпеки",step2Sub:"Лише БРБ-1 або БРБ-2 — класифікація груп ризику ВООЗ",step3Title:"Назва установи (необов\u2019язково)",step3Sub:"З\u2019являється в заголовку SOP",institutionPlaceholder:"напр. Національна лабораторія громадського здоров\u2019я",generateBtn:"Створити SOP з біобезпеки",printBtn:"Друк / Зберегти PDF",copyBtn:"Копіювати як текст",errNoSample:"Будь ласка, виберіть тип зразка.",errNoBSL:"Будь ласка, виберіть рівень біобезпеки.",sopTitle:"Стандартна операційна процедура",sopSubtitle:"Біобезпека та лабораторна безпека",metaDate:"Дата",metaBSL:"Рівень біобезпеки",metaSample:"Тип зразка",metaInstitution:"Установа",metaVersion:"Версія",metaRef:"Посилання",betaDisclaimer:"БЕТА — ЛИШЕ ПОПЕРЕДНІ ВКАЗІВКИ. Перед використанням необхідно перевірити та затвердити сертифікованим фахівцем з біобезпеки.",disclaimer:"Цей SOP базується на Посібнику ВООЗ з лабораторної біобезпеки (4-е вид., 2020). Охоплює лише БРБ-1 і БРБ-2. Не замінює інституційний SOP або експертну перевірку.",bsl3Warning:"БРБ-3 та БРБ-4 НЕ охоплюються цим інструментом. Вимагають спеціалізованих об\u2019єктів, регуляторного дозволу та експертного нагляду.",sections:{scope:"Область застосування, мета та довідник збудників",ppe:"Засоби індивідуального захисту (ЗІЗ)",access:"Доступ до лабораторії та утримання",decon:"Процедури знезараження",spill:"Реагування на розлив",waste:"Утилізація відходів",exposure:"Реагування на вплив та інциденти",training:"Вимоги до навчання",refs:"Посилання та затвердження"},ppe_table_headers:["ЗІЗ","Вимога","Примітки"],decon_agents:["Засіб","Концентрація","Час контакту","Застосування"],required:"Обов\u2019язково",optional:"Рекомендовано",sig_preparedBy:"Підготовлено",sig_reviewedBy:"Перевірено (Фахівець з біобезпеки)",sig_approvedBy:"Затверджено (Директор лабораторії)",sig_date:"Дата",toolbarTitle:"SOP з біобезпеки",copyDone:"Скопійовано!",bsl_desc:{bsl1:"Група ризику 1 ВООЗ/БРБ-1: Навряд чи спричинить захворювання у людини. Мінімальна небезпека.",bsl2:"Група ризику 2 ВООЗ/БРБ-2: Може спричинити захворювання людини, але навряд чи стане серйозною небезпекою; ефективне лікування доступне."}},
+ en:{change:"Change language",step1Title:"Select sample type",step1Sub:"What type of samples will this SOP cover?",step2Title:"Select biosafety level",step2Sub:"BSL-1 or BSL-2 only — based on WHO risk group classification",step3Title:"Institution name (optional)",step3Sub:"Appears in the SOP header",institutionPlaceholder:"e.g. National Public Health Laboratory",generateBtn:"Generate Biosafety SOP",printBtn:"Print / Save PDF",copyBtn:"Copy as text",errNoSample:"Please select a sample type.",errNoBSL:"Please select a biosafety level.",sopTitle:"Standard Operating Procedure",sopSubtitle:"Biosafety & Laboratory Safety",metaDate:"Date",metaBSL:"Biosafety Level",metaSample:"Sample Type",metaInstitution:"Institution",metaVersion:"Version",metaRef:"Reference",betaDisclaimer:"BETA — PRELIMINARY GUIDELINES ONLY. Must be reviewed and approved by a certified biosafety officer before use.",disclaimer:"This SOP is generated as preliminary guidance based on WHO Laboratory Biosafety Manual (4th ed., 2020) and BMBL (6th ed.). It covers BSL-1 and BSL-2 only. <strong>It does not replace institution-specific SOPs, expert biosafety officer review, or local regulatory compliance.</strong> All staff must receive documented training before working with infectious materials.",bsl3Warning:"BSL-3 and BSL-4 are NOT covered by this tool. These levels involve Risk Group 3 and 4 pathogens (e.g. M. tuberculosis, Brucella, Ebola, Marburg) and require specialized containment facilities, engineering controls, regulatory authorization, and expert biosafety officer oversight beyond the scope of this document.",sections:{scope:"Scope, Purpose & Pathogen Reference",ppe:"Personal Protective Equipment (PPE)",access:"Laboratory Access & Containment",decon:"Decontamination Procedures",spill:"Spill Response",waste:"Waste Disposal",exposure:"Exposure & Incident Response",training:"Training Requirements",refs:"References & Approval"},ppe_table_headers:["PPE Item","Requirement","Notes"],decon_agents:["Agent","Concentration","Contact Time","Application"],required:"Required",optional:"Recommended",sig_preparedBy:"Prepared by",sig_reviewedBy:"Reviewed by (Biosafety Officer)",sig_approvedBy:"Approved by (Lab Director)",sig_date:"Date",toolbarTitle:"Biosafety SOP",copyDone:"Copied!",bsl_desc:{bsl1:"WHO Risk Group 2 / BSL-1: Unlikely to cause human disease. Minimal hazard to laboratory workers and community.",bsl2:"WHO Risk Group 2 / BSL-2: Can cause human disease but unlikely to be a serious hazard; effective prophylaxis or treatment available."}},
+ fr:{change:"Changer de langue",step1Title:"Sélectionnez le type d\u2019échantillon",step1Sub:"Quel type d\u2019échantillons cette SOP couvrira-t-elle\u00a0?",step2Title:"Sélectionnez le niveau de biosécurité",step2Sub:"NSB-1 ou NSB-2 uniquement — classification des groupes de risque de l\u2019OMS",step3Title:"Nom de l\u2019institution (optionnel)",step3Sub:"Apparaît dans l\u2019en-tête de la SOP",institutionPlaceholder:"ex. Laboratoire national de santé publique",generateBtn:"Générer la SOP de biosécurité",printBtn:"Imprimer / Enregistrer PDF",copyBtn:"Copier en texte",errNoSample:"Veuillez sélectionner un type d\u2019échantillon.",errNoBSL:"Veuillez sélectionner un niveau de biosécurité.",sopTitle:"Procédure Opératoire Standard",sopSubtitle:"Biosécurité et Sécurité en Laboratoire",metaDate:"Date",metaBSL:"Niveau de biosécurité",metaSample:"Type d\u2019échantillon",metaInstitution:"Institution",metaVersion:"Version",metaRef:"Référence",betaDisclaimer:"BÊTA — DIRECTIVES PRÉLIMINAIRES UNIQUEMENT. Doit être examiné et approuvé par un responsable de biosécurité certifié avant utilisation.",disclaimer:"Cette SOP est générée à titre d\u2019orientation préliminaire sur la base du Manuel de biosécurité en laboratoire de l\u2019OMS (4e éd., 2020). Elle couvre les NSB-1 et NSB-2 uniquement. Elle ne remplace pas les SOP spécifiques à l\u2019institution, l\u2019expertise d\u2019un responsable de biosécurité, ni la réglementation locale.",bsl3Warning:"Les niveaux NSB-3 et NSB-4 ne sont pas couverts par cet outil. Ces niveaux impliquent des pathogènes des groupes de risque 3 et 4 et nécessitent des installations spécialisées, une autorisation réglementaire et une supervision experte.",sections:{scope:"Portée, objectif et référence des pathogènes",ppe:"Équipement de protection individuelle (EPI)",access:"Accès au laboratoire et confinement",decon:"Procédures de décontamination",spill:"Intervention en cas de déversement",waste:"Élimination des déchets",exposure:"Réponse aux expositions et incidents",training:"Exigences de formation",refs:"Références et approbation"},ppe_table_headers:["EPI","Exigence","Notes"],decon_agents:["Agent","Concentration","Temps de contact","Application"],required:"Obligatoire",optional:"Recommandé",sig_preparedBy:"Préparé par",sig_reviewedBy:"Examiné par (Responsable biosécurité)",sig_approvedBy:"Approuvé par (Directeur de laboratoire)",sig_date:"Date",toolbarTitle:"SOP de biosécurité",copyDone:"Copié\u00a0!",bsl_desc:{bsl1:"Groupe de risque 1 OMS\u00a0: Peu susceptible de causer une maladie chez l\u2019homme. Risque minimal.",bsl2:"Groupe de risque 2 OMS\u00a0: Peut causer une maladie chez l\u2019homme mais peu susceptible d\u2019être un danger grave; prophylaxie ou traitement efficace disponible."}},
+ es:{change:"Cambiar idioma",step1Title:"Seleccione el tipo de muestra",step1Sub:"¿Qué tipo de muestras cubrirá este SOP?",step2Title:"Seleccione el nivel de bioseguridad",step2Sub:"NSB-1 o NSB-2 únicamente — clasificación de grupos de riesgo de la OMS",step3Title:"Nombre de la institución (opcional)",step3Sub:"Aparece en el encabezado del SOP",institutionPlaceholder:"ej. Laboratorio Nacional de Salud Pública",generateBtn:"Generar SOP de bioseguridad",printBtn:"Imprimir / Guardar PDF",copyBtn:"Copiar como texto",errNoSample:"Por favor seleccione un tipo de muestra.",errNoBSL:"Por favor seleccione un nivel de bioseguridad.",sopTitle:"Procedimiento Operativo Estándar",sopSubtitle:"Bioseguridad y Seguridad en Laboratorio",metaDate:"Fecha",metaBSL:"Nivel de bioseguridad",metaSample:"Tipo de muestra",metaInstitution:"Institución",metaVersion:"Versión",metaRef:"Referencia",betaDisclaimer:"BETA — PAUTAS PRELIMINARES ÚNICAMENTE. Debe ser revisado y aprobado por un oficial de bioseguridad certificado antes de su uso.",disclaimer:"Esta SOP se genera como orientación preliminar basada en el Manual de Bioseguridad en Laboratorio de la OMS (4.ª ed., 2020) y el BMBL (6.ª ed.). Cubre solo NSB-1 y NSB-2. <strong>No reemplaza SOPs específicos de la institución, revisión experta de oficiales de bioseguridad, ni el cumplimiento de regulaciones locales.</strong> Todo el personal debe recibir capacitación documentada antes de trabajar con materiales infecciosos.",bsl3Warning:"Los niveles NSB-3 y NSB-4 NO están cubiertos por esta herramienta. Estos niveles involucran patógenos de los grupos de riesgo 3 y 4 (por ejemplo, M. tuberculosis, Brucella, Ébola, Marburg) y requieren instalaciones de contención especializadas, controles de ingeniería, autorización regulatoria y supervisión experta de oficiales de bioseguridad que están más allá del alcance de este documento.",sections:{scope:"Alcance, propósito y referencia de patógenos",ppe:"Equipo de protección personal (EPP)",access:"Acceso al laboratorio y contención",decon:"Procedimientos de descontaminación",spill:"Respuesta a derrames",waste:"Eliminación de residuos",exposure:"Respuesta a exposiciones e incidentes",training:"Requisitos de capacitación",refs:"Referencias y aprobación"},ppe_table_headers:["EPP","Requisito","Notas"],decon_agents:["Agente","Concentración","Tiempo de contacto","Aplicación"],required:"Obligatorio",optional:"Recomendado",sig_preparedBy:"Preparado por",sig_reviewedBy:"Revisado por (Oficial de bioseguridad)",sig_approvedBy:"Aprobado por (Director de laboratorio)",sig_date:"Fecha",toolbarTitle:"SOP de bioseguridad",copyDone:"¡Copiado!",bsl_desc:{bsl1:"Grupo de riesgo 1 OMS: Poco probable que cause enfermedad en humanos. Riesgo mínimo.",bsl2:"Grupo de riesgo 2 OMS: Puede causar enfermedad humana pero poco probable que sea un peligro grave; profilaxis o tratamiento eficaz disponible."}},
+ pt:{change:"Mudar idioma",step1Title:"Selecione o tipo de amostra",step1Sub:"Que tipo de amostras este SOP irá cobrir?",step2Title:"Selecione o nível de biossegurança",step2Sub:"NBS-1 ou NBS-2 apenas — classificação de grupos de risco da OMS",step3Title:"Nome da instituição (opcional)",step3Sub:"Aparece no cabeçalho do SOP",institutionPlaceholder:"ex. Laboratório Nacional de Saúde Pública",generateBtn:"Gerar SOP de biossegurança",printBtn:"Imprimir / Guardar PDF",copyBtn:"Copiar como texto",errNoSample:"Por favor selecione um tipo de amostra.",errNoBSL:"Por favor selecione um nível de biossegurança.",sopTitle:"Procedimento Operacional Padrão",sopSubtitle:"Biossegurança e Segurança em Laboratório",metaDate:"Data",metaBSL:"Nível de biossegurança",metaSample:"Tipo de amostra",metaInstitution:"Instituição",metaVersion:"Versão",metaRef:"Referência",betaDisclaimer:"BETA — ORIENTAÇÕES PRELIMINARES APENAS. Deve ser revisto e aprovado por um responsável de biossegurança certificado antes de ser utilizado.",disclaimer:"Este SOP é gerado como orientação preliminar com base no Manual de Biossegurança em Laboratório da OMS (4.ª ed., 2020). Cobre apenas NBS-1 e NBS-2. Não substitui SOPs institucionais, revisão especializada nem regulamentação local.",bsl3Warning:"Os níveis NBS-3 e NBS-4 NÃO são cobertos por esta ferramenta. Requerem instalações especializadas, autorização regulatória e supervisão especializada.",sections:{scope:"Âmbito, objetivo e referência de agentes patogénicos",ppe:"Equipamento de proteção individual (EPI)",access:"Acesso ao laboratório e contenção",decon:"Procedimentos de descontaminação",spill:"Resposta a derrames",waste:"Eliminação de resíduos",exposure:"Resposta a exposições e incidentes",training:"Requisitos de formação",refs:"Referências e aprovação"},ppe_table_headers:["EPI","Requisito","Notas"],decon_agents:["Agente","Concentração","Tempo de contacto","Aplicação"],required:"Obrigatório",optional:"Recomendado",sig_preparedBy:"Preparado por",sig_reviewedBy:"Revisto por (Responsável de biossegurança)",sig_approvedBy:"Aprovado por (Diretor de laboratório)",sig_date:"Data",toolbarTitle:"SOP de biossegurança",copyDone:"Copiado!",bsl_desc:{bsl1:"Grupo de risco 1 OMS: Pouco suscetível de causar doença em humanos. Risco mínimo.",bsl2:"Grupo de risco 2 OMS: Pode causar doença humana mas pouco provável que seja um risco grave; profilaxia ou tratamento eficaz disponível."}},
+ ar:{change:"تغيير اللغة",step1Title:"اختر نوع العينة",step1Sub:"ما نوع العينات التي سيغطيها هذا الإجراء؟",step2Title:"اختر مستوى السلامة البيولوجية",step2Sub:"المستوى 1 أو 2 فقط — تصنيف منظمة الصحة العالمية",step3Title:"اسم المؤسسة (اختياري)",step3Sub:"يظهر في رأس الإجراء",institutionPlaceholder:"مثال: المختبر الوطني للصحة العامة",generateBtn:"إنشاء إجراء السلامة البيولوجية",printBtn:"طباعة / حفظ PDF",copyBtn:"نسخ كنص",errNoSample:"يرجى تحديد نوع العينة.",errNoBSL:"يرجى تحديد مستوى السلامة البيولوجية.",sopTitle:"إجراء التشغيل القياسي",sopSubtitle:"السلامة البيولوجية وسلامة المختبر",metaDate:"التاريخ",metaBSL:"مستوى السلامة البيولوجية",metaSample:"نوع العينة",metaInstitution:"المؤسسة",metaVersion:"الإصدار",metaRef:"المرجع",betaDisclaimer:"نسخة تجريبية — إرشادات أولية فقط. يجب مراجعتها والموافقة عليها من قبل مسؤول السلامة البيولوجية المعتمد قبل الاستخدام.",disclaimer:"يستند هذا الإجراء إلى دليل السلامة البيولوجية في المختبر لمنظمة الصحة العالمية (الطبعة الرابعة، 2020). يغطي المستويين 1 و2 فقط. لا يُغني عن المراجعة المؤسسية والمتخصصة.",bsl3Warning:"المستويان 3 و4 غير مشمولَين بهذه الأداة. يتطلبان منشآت متخصصة وترخيصاً تنظيمياً وإشرافاً متخصصاً.",sections:{scope:"النطاق والغرض ومرجع مسببات الأمراض",ppe:"معدات الحماية الشخصية",access:"الوصول إلى المختبر والاحتواء",decon:"إجراءات التطهير",spill:"الاستجابة للانسكابات",waste:"التخلص من النفايات",exposure:"الاستجابة للتعرض والحوادث",training:"متطلبات التدريب",refs:"المراجع والموافقة"},ppe_table_headers:["معدة الحماية","المتطلب","ملاحظات"],decon_agents:["العامل","التركيز","وقت التلامس","التطبيق"],required:"مطلوب",optional:"موصى به",sig_preparedBy:"أُعدَّ بواسطة",sig_reviewedBy:"تمت المراجعة (مسؤول السلامة)",sig_approvedBy:"تمت الموافقة (مدير المختبر)",sig_date:"التاريخ",toolbarTitle:"إجراء السلامة البيولوجية",copyDone:"تم النسخ!",bsl_desc:{bsl1:"مجموعة الخطر 1 (منظمة الصحة العالمية): لا يُعرف بأنه يسبب مرضاً للإنسان. خطر ضئيل.",bsl2:"مجموعة الخطر 2 (منظمة الصحة العالمية): يمكن أن يسبب مرضاً للإنسان لكنه غير مرجح أن يكون خطراً بالغاً؛ يتوفر علاج أو وقاية فعّالة."}},
+ zh:{change:"更换语言",step1Title:"选择样品类型",step1Sub:"此SOP将涵盖哪类样品？",step2Title:"选择生物安全级别",step2Sub:"仅BSL-1或BSL-2 — 基于WHO危险组分类",step3Title:"机构名称（可选）",step3Sub:"显示在SOP标题中",institutionPlaceholder:"例如：国家公共卫生实验室",generateBtn:"生成生物安全SOP",printBtn:"打印/保存PDF",copyBtn:"复制为文本",errNoSample:"请选择样品类型。",errNoBSL:"请选择生物安全级别。",sopTitle:"标准操作程序",sopSubtitle:"生物安全与实验室安全",metaDate:"日期",metaBSL:"生物安全级别",metaSample:"样品类型",metaInstitution:"机构",metaVersion:"版本",metaRef:"参考文献",betaDisclaimer:"测试版 — 仅供初步参考。使用前须经认证生物安全官员审查批准。",disclaimer:"本SOP基于WHO《实验室生物安全手册》（第4版，2020年）生成，仅涵盖BSL-1和BSL-2。不替代机构专项SOP、专业审查或地方法规合规。",bsl3Warning:"本工具不涵盖BSL-3和BSL-4。这些级别需要专业设施、监管授权和专家监督。",sections:{scope:"范围、目的与病原体参考",ppe:"个人防护装备（PPE）",access:"实验室准入与防护",decon:"去污程序",spill:"溢洒应急处理",waste:"废物处置",exposure:"暴露及事件响应",training:"培训要求",refs:"参考文献与审批"},ppe_table_headers:["防护装备","要求","备注"],decon_agents:["消毒剂","浓度","接触时间","使用方法"],required:"必须",optional:"建议",sig_preparedBy:"编制人",sig_reviewedBy:"审核人（生物安全官员）",sig_approvedBy:"批准人（实验室主任）",sig_date:"日期",toolbarTitle:"生物安全SOP",copyDone:"已复制！",bsl_desc:{bsl1:"WHO危险组1/BSL-1：不大可能引起人类疾病。危害极小。",bsl2:"WHO危险组2/BSL-2：可引起人类疾病，但不大可能成为严重危害；可获得有效预防或治疗。"}},
+ sw:{change:"Badilisha lugha",step1Title:"Chagua aina ya sampuli",step1Sub:"SOP hii itashughulikia aina gani ya sampuli?",step2Title:"Chagua kiwango cha usalama wa kibiolojia",step2Sub:"BSL-1 au BSL-2 peke yake — kulingana na WHO",step3Title:"Jina la taasisi (si lazima)",step3Sub:"Linaonekana katika kichwa cha SOP",institutionPlaceholder:"mf. Maabara ya Kitaifa ya Afya ya Umma",generateBtn:"Tengeneza SOP ya Usalama wa Kibiolojia",printBtn:"Chapisha / Hifadhi PDF",copyBtn:"Nakili kama maandishi",errNoSample:"Tafadhali chagua aina ya sampuli.",errNoBSL:"Tafadhali chagua kiwango cha usalama.",sopTitle:"Utaratibu wa Uendeshaji wa Kawaida",sopSubtitle:"Usalama wa Kibiolojia na Usalama wa Maabara",metaDate:"Tarehe",metaBSL:"Kiwango cha Usalama wa Kibiolojia",metaSample:"Aina ya Sampuli",metaInstitution:"Taasisi",metaVersion:"Toleo",metaRef:"Rejea",betaDisclaimer:"BETA — MWONGOZO WA AWALI TU. Lazima upitiwe na kupitishwa na afisa wa usalama wa kibiolojia aliyeidhinishwa kabla ya matumizi.",disclaimer:"SOP hii inategemea Mwongozo wa WHO wa Usalama wa Maabara (toleo la 4, 2020). Inashughulikia BSL-1 na BSL-2 tu. Haibadilishi SOP za taasisi, ukaguzi wa wataalamu, au sheria za ndani.",bsl3Warning:"BSL-3 na BSL-4 hazishughulikiwi na zana hii. Zinahitaji vifaa maalum, idhini ya udhibiti, na usimamizi wa wataalamu.",sections:{scope:"Upeo, Madhumuni na Rejea ya Vimelea",ppe:"Vifaa vya Kinga ya Kibinafsi (PPE)",access:"Ufikiaji wa Maabara na Kuzuia",decon:"Taratibu za Utakasaji",spill:"Kukabiliana na Kumwagika",waste:"Utupaji wa Taka",exposure:"Kukabiliana na Mfiduo na Matukio",training:"Mahitaji ya Mafunzo",refs:"Marejeo na Idhini"},ppe_table_headers:["Kifaa cha Kinga","Hitaji","Maelezo"],decon_agents:["Wakala","Mkusanyiko","Muda wa Mawasiliano","Matumizi"],required:"Lazima",optional:"Inashauriwa",sig_preparedBy:"Imetayarishwa na",sig_reviewedBy:"Imepitishwa na (Afisa wa Usalama)",sig_approvedBy:"Imeidhinishwa na (Mkurugenzi wa Maabara)",sig_date:"Tarehe",toolbarTitle:"SOP ya Usalama wa Kibiolojia",copyDone:"Imenakiliwa!",bsl_desc:{bsl1:"Kundi la Hatari 1 la WHO/BSL-1: Haijulikani kusababisha ugonjwa kwa binadamu. Hatari ndogo sana.",bsl2:"Kundi la Hatari 2 la WHO/BSL-2: Inaweza kusababisha magonjwa kwa binadamu lakini si hatari kubwa; matibabu au kinga inapatikana."}},
+ hi:{change:"भाषा बदलें",step1Title:"नमूना प्रकार चुनें",step1Sub:"यह SOP किस प्रकार के नमूनों को कवर करेगी?",step2Title:"बायोसेफ्टी स्तर चुनें",step2Sub:"केवल BSL-1 या BSL-2 — WHO जोखिम समूह वर्गीकरण",step3Title:"संस्था का नाम (वैकल्पिक)",step3Sub:"SOP हेडर में दिखाई देता है",institutionPlaceholder:"जैसे: राष्ट्रीय जन स्वास्थ्य प्रयोगशाला",generateBtn:"बायोसेफ्टी SOP बनाएं",printBtn:"प्रिंट / PDF सहेजें",copyBtn:"टेक्स्ट के रूप में कॉपी करें",errNoSample:"कृपया नमूना प्रकार चुनें।",errNoBSL:"कृपया बायोसेफ्टी स्तर चुनें।",sopTitle:"मानक संचालन प्रक्रिया",sopSubtitle:"बायोसेफ्टी और प्रयोगशाला सुरक्षा",metaDate:"दिनांक",metaBSL:"बायोसेफ्टी स्तर",metaSample:"नमूना प्रकार",metaInstitution:"संस्था",metaVersion:"संस्करण",metaRef:"संदर्भ",betaDisclaimer:"बीटा — केवल प्रारंभिक दिशानिर्देश। उपयोग से पहले प्रमाणित बायोसेफ्टी अधिकारी द्वारा समीक्षा और अनुमोदन आवश्यक।",disclaimer:"यह SOP WHO प्रयोगशाला जैव सुरक्षा मैनुअल (4वां संस्करण, 2020) पर आधारित है। केवल BSL-1 और BSL-2 कवर करती है। संस्थागत SOPs या विशेषज्ञ समीक्षा का विकल्प नहीं।",bsl3Warning:"BSL-3 और BSL-4 इस टूल द्वारा कवर नहीं किए जाते। इनके लिए विशेष सुविधाएं, नियामक प्राधिकरण और विशेषज्ञ पर्यवेक्षण आवश्यक है।",sections:{scope:"दायरा, उद्देश्य और रोगजनक संदर्भ",ppe:"व्यक्तिगत सुरक्षा उपकरण (PPE)",access:"प्रयोगशाला पहुंच और नियंत्रण",decon:"विसंदूषण प्रक्रियाएं",spill:"रिसाव प्रतिक्रिया",waste:"अपशिष्ट निपटान",exposure:"जोखिम प्रतिक्रिया",training:"प्रशिक्षण आवश्यकताएं",refs:"संदर्भ और अनुमोदन"},ppe_table_headers:["PPE आइटम","आवश्यकता","नोट्स"],decon_agents:["एजेंट","सांद्रता","संपर्क समय","अनुप्रयोग"],required:"आवश्यक",optional:"अनुशंसित",sig_preparedBy:"तैयार किया गया",sig_reviewedBy:"समीक्षा की गई (बायोसेफ्टी अधिकारी)",sig_approvedBy:"अनुमोदित (प्रयोगशाला निदेशक)",sig_date:"दिनांक",toolbarTitle:"बायोसेफ्टी SOP",copyDone:"कॉपी हो गया!",bsl_desc:{bsl1:"WHO जोखिम समूह 1/BSL-1: मनुष्यों में रोग उत्पन्न करने की संभावना नहीं। न्यूनतम खतरा।",bsl2:"WHO जोखिम समूह 2/BSL-2: मानव रोग उत्पन्न कर सकता है लेकिन गंभीर खतरा होने की संभावना नहीं; प्रभावी उपचार उपलब्ध।"}},
+ bn:{change:"ভাষা পরিবর্তন করুন",step1Title:"নমুনার ধরন নির্বাচন করুন",step1Sub:"এই SOP কোন ধরনের নমুনা কভার করবে?",step2Title:"বায়োসেফটি স্তর নির্বাচন করুন",step2Sub:"শুধুমাত্র BSL-1 বা BSL-2 — WHO ঝুঁকি গোষ্ঠী শ্রেণিবিভাগ",step3Title:"প্রতিষ্ঠানের নাম (ঐচ্ছিক)",step3Sub:"SOP শিরোনামে প্রদর্শিত হয়",institutionPlaceholder:"যেমন: জাতীয় জনস্বাস্থ্য পরীক্ষাগার",generateBtn:"বায়োসেফটি SOP তৈরি করুন",printBtn:"প্রিন্ট / PDF সংরক্ষণ",copyBtn:"টেক্সট কপি করুন",errNoSample:"অনুগ্রহ করে নমুনার ধরন নির্বাচন করুন।",errNoBSL:"অনুগ্রহ করে বায়োসেফটি স্তর নির্বাচন করুন।",sopTitle:"আদর্শ পরিচালনা পদ্ধতি",sopSubtitle:"বায়োসেফটি ও ল্যাবরেটরি নিরাপত্তা",metaDate:"তারিখ",metaBSL:"বায়োসেফটি স্তর",metaSample:"নমুনার ধরন",metaInstitution:"প্রতিষ্ঠান",metaVersion:"সংস্করণ",metaRef:"রেফারেন্স",betaDisclaimer:"বেটা — শুধুমাত্র প্রাথমিক নির্দেশিকা। ব্যবহারের আগে প্রত্যয়িত বায়োসেফটি কর্মকর্তার অনুমোদন প্রয়োজন।",disclaimer:"এই SOP WHO ল্যাবরেটরি বায়োসেফটি ম্যানুয়াল (৪র্থ সংস্করণ, ২০২০) এর উপর ভিত্তি করে। শুধুমাত্র BSL-1 এবং BSL-2 কভার করে। প্রাতিষ্ঠানিক SOP বা বিশেষজ্ঞ পর্যালোচনার বিকল্প নয়।",bsl3Warning:"BSL-3 এবং BSL-4 এই টুলে অন্তর্ভুক্ত নয়। এগুলির জন্য বিশেষ সুবিধা, নিয়ন্ত্রক অনুমোদন এবং বিশেষজ্ঞ তত্ত্বাবধান প্রয়োজন।",sections:{scope:"পরিধি, উদ্দেশ্য ও রোগজীবাণু রেফারেন্স",ppe:"ব্যক্তিগত সুরক্ষামূলক সরঞ্জাম",access:"ল্যাবরেটরি প্রবেশাধিকার",decon:"দূষণমুক্তকরণ পদ্ধতি",spill:"ছড়িয়ে পড়া মোকাবেলা",waste:"বর্জ্য নিষ্পত্তি",exposure:"এক্সপোজার প্রতিক্রিয়া",training:"প্রশিক্ষণের প্রয়োজনীয়তা",refs:"রেফারেন্স ও অনুমোদন"},ppe_table_headers:["PPE আইটেম","প্রয়োজনীয়তা","নোট"],decon_agents:["এজেন্ট","ঘনত্ব","যোগাযোগ সময়","প্রয়োগ"],required:"প্রয়োজনীয়",optional:"সুপারিশকৃত",sig_preparedBy:"প্রস্তুতকারী",sig_reviewedBy:"পর্যালোচক (বায়োসেফটি কর্মকর্তা)",sig_approvedBy:"অনুমোদনকারী (ল্যাব পরিচালক)",sig_date:"তারিখ",toolbarTitle:"বায়োসেফটি SOP",copyDone:"কপি হয়েছে!",bsl_desc:{bsl1:"WHO ঝুঁকি গোষ্ঠী 1/BSL-1: মানুষের মধ্যে রোগ সৃষ্টির সম্ভাবনা নেই। ন্যূনতম বিপদ।",bsl2:"WHO ঝুঁকি গোষ্ঠী 2/BSL-2: মানব রোগ সৃষ্টি করতে পারে তবে গুরুতর বিপদ হওয়ার সম্ভাবনা নেই; কার্যকর চিকিৎসা পাওয়া যায়।"}},
+ id:{change:"Ganti bahasa",step1Title:"Pilih jenis sampel",step1Sub:"Jenis sampel apa yang akan dicakup SOP ini?",step2Title:"Pilih tingkat biosafety",step2Sub:"Hanya BSL-1 atau BSL-2 — berdasarkan klasifikasi WHO",step3Title:"Nama institusi (opsional)",step3Sub:"Muncul di header SOP",institutionPlaceholder:"mis. Laboratorium Kesehatan Masyarakat Nasional",generateBtn:"Buat SOP Biosafety",printBtn:"Cetak / Simpan PDF",copyBtn:"Salin sebagai teks",errNoSample:"Harap pilih jenis sampel.",errNoBSL:"Harap pilih tingkat biosafety.",sopTitle:"Prosedur Operasi Standar",sopSubtitle:"Biosafety dan Keselamatan Laboratorium",metaDate:"Tanggal",metaBSL:"Tingkat Biosafety",metaSample:"Jenis Sampel",metaInstitution:"Institusi",metaVersion:"Versi",metaRef:"Referensi",betaDisclaimer:"BETA — PANDUAN AWAL SAJA. Harus ditinjau dan disetujui oleh petugas biosafety bersertifikat sebelum digunakan.",disclaimer:"SOP ini didasarkan pada Manual Biosafety Laboratorium WHO (edisi ke-4, 2020). Hanya mencakup BSL-1 dan BSL-2. Tidak menggantikan SOP institusional atau tinjauan ahli.",bsl3Warning:"BSL-3 dan BSL-4 TIDAK dicakup oleh alat ini. Memerlukan fasilitas khusus, otorisasi regulasi, dan pengawasan ahli.",sections:{scope:"Ruang Lingkup, Tujuan & Referensi Patogen",ppe:"Alat Pelindung Diri (APD)",access:"Akses Laboratorium & Penahanan",decon:"Prosedur Dekontaminasi",spill:"Penanganan Tumpahan",waste:"Pembuangan Limbah",exposure:"Respons Paparan & Insiden",training:"Persyaratan Pelatihan",refs:"Referensi & Persetujuan"},ppe_table_headers:["APD","Persyaratan","Catatan"],decon_agents:["Agen","Konsentrasi","Waktu Kontak","Aplikasi"],required:"Wajib",optional:"Direkomendasikan",sig_preparedBy:"Disiapkan oleh",sig_reviewedBy:"Ditinjau oleh (Petugas Biosafety)",sig_approvedBy:"Disetujui oleh (Direktur Lab)",sig_date:"Tanggal",toolbarTitle:"SOP Biosafety",copyDone:"Disalin!",bsl_desc:{bsl1:"Kelompok Risiko 1 WHO/BSL-1: Tidak menyebabkan penyakit pada manusia. Bahaya minimal.",bsl2:"Kelompok Risiko 2 WHO/BSL-2: Dapat menyebabkan penyakit manusia tetapi tidak mungkin menjadi bahaya serius; pengobatan efektif tersedia."}},
+ uk:{change:"Змінити мову",step1Title:"Виберіть тип зразка",step1Sub:"Які зразки охоплюватиме цей SOP?",step2Title:"Виберіть рівень біобезпеки",step2Sub:"Лише БРБ-1 або БРБ-2 — класифікація груп ризику ВООЗ",step3Title:"Назва установи (необов\u2019язково)",step3Sub:"З\u2019являється в заголовку SOP",institutionPlaceholder:"напр. Національна лабораторія громадського здоров\u2019я",generateBtn:"Створити SOP з біобезпеки",printBtn:"Друк / Зберегти PDF",copyBtn:"Копіювати як текст",errNoSample:"Будь ласка, виберіть тип зразка.",errNoBSL:"Будь ласка, виберіть рівень біобезпеки.",sopTitle:"Стандартна операційна процедура",sopSubtitle:"Біобезпека та лабораторна безпека",metaDate:"Дата",metaBSL:"Рівень біобезпеки",metaSample:"Тип зразка",metaInstitution:"Установа",metaVersion:"Версія",metaRef:"Посилання",betaDisclaimer:"БЕТА — ЛИШЕ ПОПЕРЕДНІ ВКАЗІВКИ. Перед використанням необхідно перевірити та затвердити сертифікованим фахівцем з біобезпеки.",disclaimer:"Цей SOP базується на Посібнику ВООЗ з лабораторної біобезпеки (4-е вид., 2020). Охоплює лише БРБ-1 і БРБ-2. Не замінює інституційний SOP або експертну перевірку.",bsl3Warning:"БРБ-3 та БРБ-4 НЕ охоплюються цим інструментом. Вимагають спеціалізованих об\u2019єктів, регуляторного дозволу та експертного нагляду.",sections:{scope:"Область застосування, мета та довідник збудників",ppe:"Засоби індивідуального захисту (ЗІЗ)",access:"Доступ до лабораторії та утримання",decon:"Процедури знезараження",spill:"Реагування на розлив",waste:"Утилізація відходів",exposure:"Реагування на вплив та інциденти",training:"Вимоги до навчання",refs:"Посилання та затвердження"},ppe_table_headers:["ЗІЗ","Вимога","Примітки"],decon_agents:["Засіб","Концентрація","Час контакту","Застосування"],required:"Обов\u2019язково",optional:"Рекомендовано",sig_preparedBy:"Підготовлено",sig_reviewedBy:"Перевірено (Фахівець з біобезпеки)",sig_approvedBy:"Затверджено (Директор лабораторії)",sig_date:"Дата",toolbarTitle:"SOP з біобезпеки",copyDone:"Скопійовано!",bsl_desc:{bsl1:"Група ризику 1 ВООЗ/БРБ-1: Навряд чи спричинить захворювання у людини. Мінімальна небезпека.",bsl2:"Група ризику 2 ВООЗ/БРБ-2: Може спричинити захворювання людини, але навряд чи стане серйозною небезпекою; ефективне лікування доступне."}},
 };
 ["it","am","ha","yo","ln","mg","ne","tl","rw","rn","ny"].forEach(c=>{UI[c]={...UI.en};});
 UI.it.change="Cambia lingua";UI.it.generateBtn="Genera SOP di biosicurezza";UI.it.sopTitle="Procedura Operativa Standard";UI.it.toolbarTitle="SOP di biosicurezza";UI.it.betaDisclaimer="BETA — SOLO LINEE GUIDA PRELIMINARI. Deve essere revisionato e approvato da un responsabile della biosicurezza certificato prima dell'uso.";UI.it.bsl_desc={bsl1:"Gruppo di rischio 1 OMS/BSL-1: Non causa malattia negli adulti sani. Pericolo minimo.",bsl2:"Gruppo di rischio 2 OMS/BSL-2: Pu\u00f2 causare malattia umana ma difficilmente costituir\u00e0 un pericolo grave; profilassi o terapia efficace disponibile."};
@@ -280,392 +280,392 @@ UI.ln.change="Sungola lokota";UI.ln.generateBtn="Sala SOP ya Biosécurité";UI.l
 UI.mg.change="Hanova teny";UI.mg.generateBtn="Mamorona SOP Biosafety";UI.mg.betaDisclaimer="BETA — TOROLALANA VOALOHANY IHANY.";
 
 const SAMPLE_TYPES=[
-  {id:"clinical",icon:"🩸",names:{en:"Clinical",fr:"Clinique",es:"Clínico",pt:"Clínico",it:"Clinico",ar:"سريري",zh:"临床",sw:"Kliniki",am:"ክሊኒካዊ",hi:"नैदानिक",bn:"ক্লিনিকাল",id:"Klinis",uk:"Клінічний",ha:"Asibiti",yo:"Iwosan",ln:"Kliniki",mg:"Klinika",ne:"क्लिनिकल",tl:"Klinikal",rw:"Igisobanuro",rn:"Igisobanuro",ny:"Chipatala"},descs:{en:"Blood, fecal, urine, swabs, CSF, tissue",fr:"Sang, selles, urine, écouvillons, LCR",es:"Sangre, heces, orina, hisopos, LCR",pt:"Sangue, fezes, urina, swabs, LCR",it:"Sangue, feci, urina, tamponi",ar:"دم، براز، بول، مسحات",zh:"血液、粪便、尿液、拭子",sw:"Damu, kinyesi, mkojo, swab",am:"ደም፣ሰገራ፣ሽንት",hi:"रक्त, मल, मूत्र, स्वाब",bn:"রক্ত, মল, মূত্র",id:"Darah, feses, urin, swab",uk:"Кров, кал, сеча, мазки"}},
-  {id:"environmental",icon:"💧",names:{en:"Environmental",fr:"Environnemental",es:"Ambiental",pt:"Ambiental",it:"Ambientale",ar:"بيئي",zh:"环境",sw:"Mazingira",am:"አካባቢያዊ",hi:"पर्यावरणीय",bn:"পরিবেশগত",id:"Lingkungan",uk:"Навколишнє середовище",ha:"Muhalli",yo:"Ayika",ln:"Esika",mg:"Tontolo iainana",ne:"वातावरणीय",tl:"Pangkapaligiran",rw:"Ibidukikije",rn:"Ibidukikije",ny:"Chilengedwe"},descs:{en:"Water, soil, air, biofilm, sediment",fr:"Eau, sol, air, biofilm",es:"Agua, suelo, aire, biofilm",pt:"Água, solo, ar, biofilme",it:"Acqua, suolo, aria, biofilm",ar:"ماء، تربة، هواء",zh:"水、土壤、空气、生物膜",sw:"Maji, udongo, hewa, biofilm",am:"ውሃ፣አፈር፣አየር",hi:"पानी, मिट्टी, हवा",bn:"পানি, মাটি, বায়ু",id:"Air, tanah, udara, biofilm",uk:"Вода, ґрунт, повітря"}},
-  {id:"food",icon:"🌾",names:{en:"Food / Agricultural",fr:"Alimentaire / Agricole",es:"Alimentario / Agrícola",pt:"Alimentar / Agrícola",it:"Alimentare / Agricolo",ar:"غذائي / زراعي",zh:"食品/农业",sw:"Chakula / Kilimo",am:"ምግብ/ግብርና",hi:"खाद्य/कृषि",bn:"খাদ্য/কৃষি",id:"Pangan/Pertanian",uk:"Харчові/Сільськогосподарські",ha:"Abinci",yo:"Ounjẹ",ln:"Bilei",mg:"Sakafo",ne:"खाद्य/कृषि",tl:"Pagkain",rw:"Ibiryo",rn:"Ibiryo",ny:"Chakudya"},descs:{en:"Food, produce, animals, irrigation water",fr:"Aliments, produits, animaux, eaux",es:"Alimentos, productos, animales",pt:"Alimentos, produtos, animais",it:"Alimenti, prodotti, animali",ar:"طعام، منتجات، حيوانات",zh:"食品、农产品、动物",sw:"Chakula, mazao, wanyama",am:"ምግብ፣ምርቶች፣እንስሳ",hi:"खाद्य, उत्पाद, पशु",bn:"খাদ্য, উৎপাদন, প্রাণী",id:"Pangan, produk, hewan",uk:"Їжа, продукти, тварини"}},
-  {id:"culture",icon:"🧫",names:{en:"Microbial Culture",fr:"Culture microbienne",es:"Cultivo microbiano",pt:"Cultura microbiana",it:"Coltura microbica",ar:"مزرعة ميكروبية",zh:"微生物培养物",sw:"Ukuaji wa Viumbe",am:"ማይክሮባዊ ካልቸር",hi:"सूक्ष्मजीव कल्चर",bn:"মাইক্রোবিয়াল কালচার",id:"Kultur Mikroba",uk:"Мікробні культури",ha:"Al'adar Ƙwayoyin",yo:"Aṣa Awọn Microbe",ln:"Culture ya Bimikrobe",mg:"Fananahana Microbe",ne:"माइक्रोबियल कल्चर",tl:"Kultura ng Mikrobyo",rw:"Ubuhinzi bwa Microbes",rn:"Ubuhinzi bwa Microbes",ny:"Kultura ya Tizilombo"},descs:{en:"Bacterial/fungal cultures, isolates, stocks",fr:"Cultures bactériennes/fongiques",es:"Cultivos bacterianos/fúngicos",pt:"Culturas bacterianas/fúngicas",it:"Colture batteriche/fungine",ar:"مزارع بكتيرية/فطرية",zh:"细菌/真菌培养物",sw:"Tamaduni za bakteria/kuvu",am:"የባክቴሪያ/ፈንጋይ ባህሎች",hi:"बैक्टीरियल/फंगल कल्चर",bn:"ব্যাকটেরিয়াল কালচার",id:"Kultur bakteri/jamur",uk:"Бактеріальні/грибкові культури"}},
+ {id:"clinical",icon:"🩸",names:{en:"Clinical",fr:"Clinique",es:"Clínico",pt:"Clínico",it:"Clinico",ar:"سريري",zh:"临床",sw:"Kliniki",am:"ክሊኒካዊ",hi:"नैदानिक",bn:"ক্লিনিকাল",id:"Klinis",uk:"Клінічний",ha:"Asibiti",yo:"Iwosan",ln:"Kliniki",mg:"Klinika",ne:"क्लिनिकल",tl:"Klinikal",rw:"Igisobanuro",rn:"Igisobanuro",ny:"Chipatala"},descs:{en:"Blood, fecal, urine, swabs, CSF, tissue",fr:"Sang, selles, urine, écouvillons, LCR",es:"Sangre, heces, orina, hisopos, LCR",pt:"Sangue, fezes, urina, swabs, LCR",it:"Sangue, feci, urina, tamponi",ar:"دم، براز، بول، مسحات",zh:"血液、粪便、尿液、拭子",sw:"Damu, kinyesi, mkojo, swab",am:"ደም፣ሰገራ፣ሽንት",hi:"रक्त, मल, मूत्र, स्वाब",bn:"রক্ত, মল, মূত্র",id:"Darah, feses, urin, swab",uk:"Кров, кал, сеча, мазки"}},
+ {id:"environmental",icon:"💧",names:{en:"Environmental",fr:"Environnemental",es:"Ambiental",pt:"Ambiental",it:"Ambientale",ar:"بيئي",zh:"环境",sw:"Mazingira",am:"አካባቢያዊ",hi:"पर्यावरणीय",bn:"পরিবেশগত",id:"Lingkungan",uk:"Навколишнє середовище",ha:"Muhalli",yo:"Ayika",ln:"Esika",mg:"Tontolo iainana",ne:"वातावरणीय",tl:"Pangkapaligiran",rw:"Ibidukikije",rn:"Ibidukikije",ny:"Chilengedwe"},descs:{en:"Water, soil, air, biofilm, sediment",fr:"Eau, sol, air, biofilm",es:"Agua, suelo, aire, biofilm",pt:"Água, solo, ar, biofilme",it:"Acqua, suolo, aria, biofilm",ar:"ماء، تربة، هواء",zh:"水、土壤、空气、生物膜",sw:"Maji, udongo, hewa, biofilm",am:"ውሃ፣አፈር፣አየር",hi:"पानी, मिट्टी, हवा",bn:"পানি, মাটি, বায়ু",id:"Air, tanah, udara, biofilm",uk:"Вода, ґрунт, повітря"}},
+ {id:"food",icon:"🌾",names:{en:"Food / Agricultural",fr:"Alimentaire / Agricole",es:"Alimentario / Agrícola",pt:"Alimentar / Agrícola",it:"Alimentare / Agricolo",ar:"غذائي / زراعي",zh:"食品/农业",sw:"Chakula / Kilimo",am:"ምግብ/ግብርና",hi:"खाद्य/कृषि",bn:"খাদ্য/কৃষি",id:"Pangan/Pertanian",uk:"Харчові/Сільськогосподарські",ha:"Abinci",yo:"Ounjẹ",ln:"Bilei",mg:"Sakafo",ne:"खाद्य/कृषि",tl:"Pagkain",rw:"Ibiryo",rn:"Ibiryo",ny:"Chakudya"},descs:{en:"Food, produce, animals, irrigation water",fr:"Aliments, produits, animaux, eaux",es:"Alimentos, productos, animales",pt:"Alimentos, produtos, animais",it:"Alimenti, prodotti, animali",ar:"طعام، منتجات، حيوانات",zh:"食品、农产品、动物",sw:"Chakula, mazao, wanyama",am:"ምግብ፣ምርቶች፣እንስሳ",hi:"खाद्य, उत्पाद, पशु",bn:"খাদ্য, উৎপাদন, প্রাণী",id:"Pangan, produk, hewan",uk:"Їжа, продукти, тварини"}},
+ {id:"culture",icon:"🧫",names:{en:"Microbial Culture",fr:"Culture microbienne",es:"Cultivo microbiano",pt:"Cultura microbiana",it:"Coltura microbica",ar:"مزرعة ميكروبية",zh:"微生物培养物",sw:"Ukuaji wa Viumbe",am:"ማይክሮባዊ ካልቸር",hi:"सूक्ष्मजीव कल्चर",bn:"মাইক্রোবিয়াল কালচার",id:"Kultur Mikroba",uk:"Мікробні культури",ha:"Al'adar Ƙwayoyin",yo:"Aṣa Awọn Microbe",ln:"Culture ya Bimikrobe",mg:"Fananahana Microbe",ne:"माइक्रोबियल कल्चर",tl:"Kultura ng Mikrobyo",rw:"Ubuhinzi bwa Microbes",rn:"Ubuhinzi bwa Microbes",ny:"Kultura ya Tizilombo"},descs:{en:"Bacterial/fungal cultures, isolates, stocks",fr:"Cultures bactériennes/fongiques",es:"Cultivos bacterianos/fúngicos",pt:"Culturas bacterianas/fúngicas",it:"Colture batteriche/fungine",ar:"مزارع بكتيرية/فطرية",zh:"细菌/真菌培养物",sw:"Tamaduni za bakteria/kuvu",am:"የባክቴሪያ/ፈንጋይ ባህሎች",hi:"बैक्टीरियल/फंगल कल्चर",bn:"ব্যাকটেরিয়াল কালচার",id:"Kultur bakteri/jamur",uk:"Бактеріальні/грибкові культури"}},
 ];
 
 // BSL-1 and BSL-2 ONLY
 const BSL_LEVELS=[
-  {id:"bsl1",level:1,cssClass:"bsl1",icon:"🟢",names:{en:"BSL-1",fr:"NSB-1",es:"NSB-1",pt:"NBS-1",it:"BSL-1",ar:"المستوى 1",zh:"BSL-1",sw:"BSL-1",am:"BSL-1",hi:"BSL-1",bn:"BSL-1",id:"BSL-1",uk:"БРБ-1",ha:"BSL-1",yo:"BSL-1",ln:"BSL-1",mg:"BSL-1",ne:"BSL-1",tl:"BSL-1",rw:"BSL-1",rn:"BSL-1",ny:"BSL-1"}},
-  {id:"bsl2",level:2,cssClass:"bsl2",icon:"🟡",names:{en:"BSL-2",fr:"NSB-2",es:"NSB-2",pt:"NBS-2",it:"BSL-2",ar:"المستوى 2",zh:"BSL-2",sw:"BSL-2",am:"BSL-2",hi:"BSL-2",bn:"BSL-2",id:"BSL-2",uk:"БРБ-2",ha:"BSL-2",yo:"BSL-2",ln:"BSL-2",mg:"BSL-2",ne:"BSL-2",tl:"BSL-2",rw:"BSL-2",rn:"BSL-2",ny:"BSL-2"}},
+ {id:"bsl1",level:1,cssClass:"bsl1",icon:"🟢",names:{en:"BSL-1",fr:"NSB-1",es:"NSB-1",pt:"NBS-1",it:"BSL-1",ar:"المستوى 1",zh:"BSL-1",sw:"BSL-1",am:"BSL-1",hi:"BSL-1",bn:"BSL-1",id:"BSL-1",uk:"БРБ-1",ha:"BSL-1",yo:"BSL-1",ln:"BSL-1",mg:"BSL-1",ne:"BSL-1",tl:"BSL-1",rw:"BSL-1",rn:"BSL-1",ny:"BSL-1"}},
+ {id:"bsl2",level:2,cssClass:"bsl2",icon:"🟡",names:{en:"BSL-2",fr:"NSB-2",es:"NSB-2",pt:"NBS-2",it:"BSL-2",ar:"المستوى 2",zh:"BSL-2",sw:"BSL-2",am:"BSL-2",hi:"BSL-2",bn:"BSL-2",id:"BSL-2",uk:"БРБ-2",ha:"BSL-2",yo:"BSL-2",ln:"BSL-2",mg:"BSL-2",ne:"BSL-2",tl:"BSL-2",rw:"BSL-2",rn:"BSL-2",ny:"BSL-2"}},
 ];
 
 // Pathogen reference lists (WHO LBM 4th ed., Annex 1 — Risk Group classification)
 const PATHOGENS={
-  bsl1:{
-    bacteria:["Bacillus subtilis","Micrococcus luteus","Lactobacillus spp. (non-pathogenic strains)","Saccharomyces cerevisiae (lab strains)","Escherichia coli K-12 (non-pathogenic lab strains only — not wild-type)","Agrobacterium tumefaciens"],
-    viruses:["Adeno-associated virus (AAV) — lab vectors only","Baculovirus (insect-only host range)"],
-    fungi:["Saccharomyces cerevisiae (lab strains)","Pichia pastoris"],
-    note:"BSL-1 agents are Risk Group 1: not known to consistently cause disease in healthy adult humans. Examples are illustrative — always perform a site-specific risk assessment. Source: WHO LBM 4th ed., Annex 1."
-  },
-  bsl2:{
-    bacteria:["Salmonella enterica (non-typhoidal serovars)","Campylobacter jejuni","Escherichia coli (enteropathogenic/STEC strains)","Listeria monocytogenes","Staphylococcus aureus (including MRSA)","Streptococcus pyogenes","Klebsiella pneumoniae","Shigella spp.","Yersinia enterocolitica","Clostridium perfringens","Helicobacter pylori","Vibrio cholerae (non-O1/non-O139 serovars)","Bordetella pertussis","Haemophilus influenzae","Neisseria gonorrhoeae / N. meningitidis (clinical isolates)","Pseudomonas aeruginosa","Cryptosporidium parvum"],
-    viruses:["Influenza A/B (seasonal strains — not H5N1 or pandemic strains)","Hepatitis A, B, C virus","Human immunodeficiency virus (HIV) — Risk Group 3 in some jurisdictions; verify locally","Adenovirus (human strains)","Rotavirus","Norovirus","Measles virus","Mumps virus","Herpes simplex virus 1 & 2","Varicella-zoster virus","Dengue virus (serotypes 1–4)","SARS-CoV-2 (inactivated specimens and BSL-2 permitted work only — live virus at BSL-3)","Rabies virus (inactivated only — live virus requires BSL-3)"],
-    fungi:["Candida albicans","Cryptococcus neoformans (Risk Group 2)","Aspergillus fumigatus","Microsporum spp.","Trichophyton spp."],
-    parasites:["Cryptosporidium parvum","Giardia lamblia","Toxoplasma gondii","Plasmodium falciparum (in vitro work)"],
-    note:"BSL-2 agents are WHO Risk Group 2: can cause human disease; hazard from percutaneous injury, ingestion, or mucous membrane exposure; effective prophylaxis or treatment available. HIV is Risk Group 3 in some national systems — verify local classification. SARS-CoV-2 live virus requires BSL-3. Source: WHO LBM 4th ed., Annex 1; BMBL 6th ed. Agent summaries."
-  }
+ bsl1:{
+  bacteria:["Bacillus subtilis","Micrococcus luteus","Lactobacillus spp. (non-pathogenic strains)","Saccharomyces cerevisiae (lab strains)","Escherichia coli K-12 (non-pathogenic lab strains only — not wild-type)","Agrobacterium tumefaciens"],
+  viruses:["Adeno-associated virus (AAV) — lab vectors only","Baculovirus (insect-only host range)"],
+  fungi:["Saccharomyces cerevisiae (lab strains)","Pichia pastoris"],
+  note:"BSL-1 agents are Risk Group 1: not known to consistently cause disease in healthy adult humans. Examples are illustrative — always perform a site-specific risk assessment. Source: WHO LBM 4th ed., Annex 1."
+ },
+ bsl2:{
+  bacteria:["Salmonella enterica (non-typhoidal serovars)","Campylobacter jejuni","Escherichia coli (enteropathogenic/STEC strains)","Listeria monocytogenes","Staphylococcus aureus (including MRSA)","Streptococcus pyogenes","Klebsiella pneumoniae","Shigella spp.","Yersinia enterocolitica","Clostridium perfringens","Helicobacter pylori","Vibrio cholerae (non-O1/non-O139 serovars)","Bordetella pertussis","Haemophilus influenzae","Neisseria gonorrhoeae / N. meningitidis (clinical isolates)","Pseudomonas aeruginosa","Cryptosporidium parvum"],
+  viruses:["Influenza A/B (seasonal strains — not H5N1 or pandemic strains)","Hepatitis A, B, C virus","Human immunodeficiency virus (HIV) — Risk Group 3 in some jurisdictions; verify locally","Adenovirus (human strains)","Rotavirus","Norovirus","Measles virus","Mumps virus","Herpes simplex virus 1 & 2","Varicella-zoster virus","Dengue virus (serotypes 1–4)","SARS-CoV-2 (inactivated specimens and BSL-2 permitted work only — live virus at BSL-3)","Rabies virus (inactivated only — live virus requires BSL-3)"],
+  fungi:["Candida albicans","Cryptococcus neoformans (Risk Group 2)","Aspergillus fumigatus","Microsporum spp.","Trichophyton spp."],
+  parasites:["Cryptosporidium parvum","Giardia lamblia","Toxoplasma gondii","Plasmodium falciparum (in vitro work)"],
+  note:"BSL-2 agents are WHO Risk Group 2: can cause human disease; hazard from percutaneous injury, ingestion, or mucous membrane exposure; effective prophylaxis or treatment available. HIV is Risk Group 3 in some national systems — verify local classification. SARS-CoV-2 live virus requires BSL-3. Source: WHO LBM 4th ed., Annex 1; BMBL 6th ed. Agent summaries."
+ }
 };
 
 const PPE_DATA={
-  bsl1:[
-    {item:"Laboratory coat or gown",req:"required",note:"Clean, dedicated lab coat. Must not be worn outside the laboratory or in offices, cafeterias, or public areas. Remove before leaving lab. Source: WHO LBM 4th ed., §3.6."},
-    {item:"Gloves (disposable nitrile or latex)",req:"required",note:"Remove before leaving lab. Dispose of as biological waste — do not re-use or wash for re-use. Change if torn or contaminated. Source: WHO PPE Monograph, Table 1."},
-    {item:"Eye protection",req:"optional",note:"Safety glasses or goggles required whenever splash risk exists (pipetting, vortexing, opening tubes). Conduct a procedure-specific risk assessment. Source: WHO LBM 4th ed., §3.6."},
-    {item:"Closed-toe shoes",req:"required",note:"No sandals, open-toed shoes, or high heels in the laboratory at any time. Source: WHO LBM 4th ed., §3.6."},
-    {item:"Face mask",req:"optional",note:"Required if aerosol generation is possible. Source: WHO PPE Monograph."},
-  ],
-  bsl2:[
-    {item:"Laboratory coat / gown (solid-front preferred)",req:"required",note:"Back-fastening gown preferred for higher-risk procedures. Must not leave the laboratory. Autoclave before laundering if contaminated. Source: WHO LBM 4th ed., §3.6; PPE Monograph."},
-    {item:"Gloves (disposable nitrile or latex)",req:"required",note:"Double-glove for sharps work or high-concentration materials. No re-use. Remove before touching non-contaminated surfaces, phones, keyboards, or door handles. Source: WHO PPE Monograph, Table 2."},
-    {item:"Eye protection (safety glasses or goggles)",req:"required",note:"Required for all procedures with splash risk. Face shield preferred for aerosol-generating procedures. Risk assessment determines specific type. Source: WHO LBM 4th ed., §3.6; ANSI Z87.1."},
-    {item:"Closed-toe shoes",req:"required",note:"Dedicated lab footwear strongly recommended. No sandals or open-toed shoes."},
-    {item:"Respiratory protection (surgical mask or respirator)",req:"optional",note:"Required by risk assessment for aerosol-generating procedures. Surgical mask (ASTM Level 2 or 3) for droplet protection; N95/FFP2 or higher for confirmed aerosol hazard. WHO LBM 4th ed. uses risk-based selection — no single universal standard applies. Source: WHO PPE Monograph, §3."},
-    {item:"Hair restraint",req:"optional",note:"Long hair must be tied back when near open flames, rotating equipment, or when working with infectious material."},
-  ],
+ bsl1:[
+  {item:"Laboratory coat or gown",req:"required",note:"Clean, dedicated lab coat. Must not be worn outside the laboratory or in offices, cafeterias, or public areas. Remove before leaving lab. Source: WHO LBM 4th ed., §3.6."},
+  {item:"Gloves (disposable nitrile or latex)",req:"required",note:"Remove before leaving lab. Dispose of as biological waste — do not re-use or wash for re-use. Change if torn or contaminated. Source: WHO PPE Monograph, Table 1."},
+  {item:"Eye protection",req:"optional",note:"Safety glasses or goggles required whenever splash risk exists (pipetting, vortexing, opening tubes). Conduct a procedure-specific risk assessment. Source: WHO LBM 4th ed., §3.6."},
+  {item:"Closed-toe shoes",req:"required",note:"No sandals, open-toed shoes, or high heels in the laboratory at any time. Source: WHO LBM 4th ed., §3.6."},
+  {item:"Face mask",req:"optional",note:"Required if aerosol generation is possible. Source: WHO PPE Monograph."},
+ ],
+ bsl2:[
+  {item:"Laboratory coat / gown (solid-front preferred)",req:"required",note:"Back-fastening gown preferred for higher-risk procedures. Must not leave the laboratory. Autoclave before laundering if contaminated. Source: WHO LBM 4th ed., §3.6; PPE Monograph."},
+  {item:"Gloves (disposable nitrile or latex)",req:"required",note:"Double-glove for sharps work or high-concentration materials. No re-use. Remove before touching non-contaminated surfaces, phones, keyboards, or door handles. Source: WHO PPE Monograph, Table 2."},
+  {item:"Eye protection (safety glasses or goggles)",req:"required",note:"Required for all procedures with splash risk. Face shield preferred for aerosol-generating procedures. Risk assessment determines specific type. Source: WHO LBM 4th ed., §3.6; ANSI Z87.1."},
+  {item:"Closed-toe shoes",req:"required",note:"Dedicated lab footwear strongly recommended. No sandals or open-toed shoes."},
+  {item:"Respiratory protection (surgical mask or respirator)",req:"optional",note:"Required by risk assessment for aerosol-generating procedures. Surgical mask (ASTM Level 2 or 3) for droplet protection; N95/FFP2 or higher for confirmed aerosol hazard. WHO LBM 4th ed. uses risk-based selection — no single universal standard applies. Source: WHO PPE Monograph, §3."},
+  {item:"Hair restraint",req:"optional",note:"Long hair must be tied back when near open flames, rotating equipment, or when working with infectious material."},
+ ],
 };
 
 const DECON_AGENTS=[
-  {agent:"Sodium hypochlorite (bleach)",conc:"0.5% (5,000 ppm) for spills/heavy contamination; 0.1% (1,000 ppm) for routine surface disinfection in clean conditions",time:"Contact time is agent-, organism-, and surface-dependent per validated protocol. Prepare fresh daily — dilute solutions degrade within ~1 day in open containers.",use:"Surfaces, liquid waste, spills. Clean gross contamination before applying. Organic matter substantially reduces efficacy. Inactivated by blood and proteins — pre-clean surfaces first. Corrosive to metals at high concentrations. Source: WHO Decon Monograph, Table 2.2."},
-  {agent:"70% Ethanol or 70% Isopropanol",conc:"70% v/v in water (higher concentrations are less effective — 70% is optimal)",time:"Allow to air-dry; minimum 1 minute wet contact before wiping",use:"Hard non-porous surfaces, BSC work surfaces, equipment exteriors. Effective against enveloped viruses and vegetative bacteria. No activity against bacterial spores. Variable activity against non-enveloped viruses — check agent-specific data. Source: WHO Decon Monograph, §2.2.1."},
-  {agent:"Autoclaving (moist heat sterilization)",conc:"121°C / 103 kPa (15 psi) — validated cycle. 134°C / 206 kPa for prion-contaminated material.",time:"15 min holding time for liquids (fluids); 30 min for porous loads. Validate cycle with Geobacillus stearothermophilus biological indicators before routine use.",use:"Liquid waste, contaminated labware, biological material. Gold standard validated method. CRITICAL: Do NOT autoclave hazardous chemical waste, mercury, radioactive waste, or bleach-treated waste — this creates toxic fumes or pressure hazards. WHO LBM4 §3.1.1 explicitly prohibits this. Source: WHO Decon Monograph, §2.1."},
-  {agent:"Glutaraldehyde (2%)",conc:"2% aqueous solution (activated per manufacturer instructions)",time:"10–60 minutes depending on application and target organisms",use:"Heat-sensitive equipment, endoscopes, instruments. Effective against bacteria, viruses, fungi, and spores. Use ONLY in a well-ventilated area or fume hood — glutaraldehyde vapour is toxic, irritating, and a potential sensitizer. Appropriate PPE (nitrile gloves, eye protection, respiratory protection) required. Source: WHO Decon Monograph."},
+ {agent:"Sodium hypochlorite (bleach)",conc:"0.5% (5,000 ppm) for spills/heavy contamination; 0.1% (1,000 ppm) for routine surface disinfection in clean conditions",time:"Contact time is agent-, organism-, and surface-dependent per validated protocol. Prepare fresh daily — dilute solutions degrade within ~1 day in open containers.",use:"Surfaces, liquid waste, spills. Clean gross contamination before applying. Organic matter substantially reduces efficacy. Inactivated by blood and proteins — pre-clean surfaces first. Corrosive to metals at high concentrations. Source: WHO Decon Monograph, Table 2.2."},
+ {agent:"70% Ethanol or 70% Isopropanol",conc:"70% v/v in water (higher concentrations are less effective — 70% is optimal)",time:"Allow to air-dry; minimum 1 minute wet contact before wiping",use:"Hard non-porous surfaces, BSC work surfaces, equipment exteriors. Effective against enveloped viruses and vegetative bacteria. No activity against bacterial spores. Variable activity against non-enveloped viruses — check agent-specific data. Source: WHO Decon Monograph, §2.2.1."},
+ {agent:"Autoclaving (moist heat sterilization)",conc:"121°C / 103 kPa (15 psi) — validated cycle. 134°C / 206 kPa for prion-contaminated material.",time:"15 min holding time for liquids (fluids); 30 min for porous loads. Validate cycle with Geobacillus stearothermophilus biological indicators before routine use.",use:"Liquid waste, contaminated labware, biological material. Gold standard validated method. CRITICAL: Do NOT autoclave hazardous chemical waste, mercury, radioactive waste, or bleach-treated waste — this creates toxic fumes or pressure hazards. WHO LBM4 §3.1.1 explicitly prohibits this. Source: WHO Decon Monograph, §2.1."},
+ {agent:"Glutaraldehyde (2%)",conc:"2% aqueous solution (activated per manufacturer instructions)",time:"10–60 minutes depending on application and target organisms",use:"Heat-sensitive equipment, endoscopes, instruments. Effective against bacteria, viruses, fungi, and spores. Use ONLY in a well-ventilated area or fume hood — glutaraldehyde vapour is toxic, irritating, and a potential sensitizer. Appropriate PPE (nitrile gloves, eye protection, respiratory protection) required. Source: WHO Decon Monograph."},
 ];
 
 let selectedLang=null,selectedSample=null,selectedBSL=null;
 
 function buildPicker(){
-  const grid=document.getElementById("langGrid");
-  LANGS.forEach(l=>{
-    const btn=document.createElement("button");
-    btn.className="lang-btn";btn.id="lb-"+l.code;
-    btn.innerHTML=`<span class="lang-dot"></span>${l.native}`;
-    btn.onclick=()=>selectLang(l.code);
-    grid.appendChild(btn);
-  });
+ const grid=document.getElementById("langGrid");
+ LANGS.forEach(l=>{
+  const btn=document.createElement("button");
+  btn.className="lang-btn";btn.id="lb-"+l.code;
+  btn.innerHTML=`<span class="lang-dot"></span>${l.native}`;
+  btn.onclick=()=>selectLang(l.code);
+  grid.appendChild(btn);
+ });
 }
 
 function selectLang(code){
-  selectedLang=code;
-  LANGS.forEach(l=>{const b=document.getElementById("lb-"+l.code);if(b)b.classList.toggle("selected",l.code===code);});
-  const lang=LANGS.find(l=>l.code===code);
-  const u=UI[code]||UI.en;
-  document.documentElement.lang=code;
-  document.documentElement.dir=lang.dir;
-  document.getElementById("langDisplay").innerHTML=`${lang.native} <span style="opacity:.7;font-size:13px;margin-left:8px">${lang.english}</span>`;
-  setText("btnChange",u.change);
-  setText("step1Title",u.step1Title);
-  setText("step1Sub",u.step1Sub);
-  setText("step2Title",u.step2Title);
-  setText("step2Sub",u.step2Sub);
-  setText("step3Title",u.step3Title);
-  setText("step3Sub",u.step3Sub);
-  document.getElementById("institutionInput").placeholder=u.institutionPlaceholder||"";
-  setText("btnGenerateText",u.generateBtn);
-  setText("btnPrint",u.printBtn||"Print / Save PDF");
-  setText("btnCopy",u.copyBtn||"Copy as text");
-  buildSampleGrid();buildBSLGrid();
-  document.getElementById("appSection").classList.add("visible");
-  document.getElementById("appSection").scrollIntoView({behavior:"smooth",block:"start"});
+ selectedLang=code;
+ LANGS.forEach(l=>{const b=document.getElementById("lb-"+l.code);if(b)b.classList.toggle("selected",l.code===code);});
+ const lang=LANGS.find(l=>l.code===code);
+ const u=UI[code]||UI.en;
+ document.documentElement.lang=code;
+ document.documentElement.dir=lang.dir;
+ document.getElementById("langDisplay").innerHTML=`${lang.native} <span style="opacity:.7;font-size:13px;margin-left:8px">${lang.english}</span>`;
+ setText("btnChange",u.change);
+ setText("step1Title",u.step1Title);
+ setText("step1Sub",u.step1Sub);
+ setText("step2Title",u.step2Title);
+ setText("step2Sub",u.step2Sub);
+ setText("step3Title",u.step3Title);
+ setText("step3Sub",u.step3Sub);
+ document.getElementById("institutionInput").placeholder=u.institutionPlaceholder||"";
+ setText("btnGenerateText",u.generateBtn);
+ setText("btnPrint",u.printBtn||"Print / Save PDF");
+ setText("btnCopy",u.copyBtn||"Copy as text");
+ buildSampleGrid();buildBSLGrid();
+ document.getElementById("appSection").classList.add("visible");
+ document.getElementById("appSection").scrollIntoView({behavior:"smooth",block:"start"});
 }
 
 function changeLang(){
-  document.getElementById("appSection").classList.remove("visible");
-  document.getElementById("sopOutput").classList.remove("visible");
-  document.querySelector(".lang-section").scrollIntoView({behavior:"smooth",block:"start"});
-  LANGS.forEach(l=>{const b=document.getElementById("lb-"+l.code);if(b)b.classList.remove("selected");});
-  selectedLang=null;selectedSample=null;selectedBSL=null;
+ document.getElementById("appSection").classList.remove("visible");
+ document.getElementById("sopOutput").classList.remove("visible");
+ document.querySelector(".lang-section").scrollIntoView({behavior:"smooth",block:"start"});
+ LANGS.forEach(l=>{const b=document.getElementById("lb-"+l.code);if(b)b.classList.remove("selected");});
+ selectedLang=null;selectedSample=null;selectedBSL=null;
 }
 
 function setText(id,text){const el=document.getElementById(id);if(el&&text!==undefined)el.textContent=text;}
 
 function buildSampleGrid(){
-  const grid=document.getElementById("sampleTypeGrid");grid.innerHTML="";
-  SAMPLE_TYPES.forEach(st=>{
-    const name=st.names[selectedLang]||st.names.en;
-    const desc=st.descs[selectedLang]||st.descs.en;
-    const btn=document.createElement("button");
-    btn.className="option-btn"+(selectedSample===st.id?" selected":"");
-    btn.innerHTML=`<span class="option-icon">${st.icon}</span><span class="option-name">${name}</span><span class="option-desc">${desc}</span>`;
-    btn.onclick=()=>{selectedSample=st.id;buildSampleGrid();};
-    grid.appendChild(btn);
-  });
+ const grid=document.getElementById("sampleTypeGrid");grid.innerHTML="";
+ SAMPLE_TYPES.forEach(st=>{
+  const name=st.names[selectedLang]||st.names.en;
+  const desc=st.descs[selectedLang]||st.descs.en;
+  const btn=document.createElement("button");
+  btn.className="option-btn"+(selectedSample===st.id?" selected":"");
+  btn.innerHTML=`<span class="option-icon">${st.icon}</span><span class="option-name">${name}</span><span class="option-desc">${desc}</span>`;
+  btn.onclick=()=>{selectedSample=st.id;buildSampleGrid();};
+  grid.appendChild(btn);
+ });
 }
 
 function buildBSLGrid(){
-  const grid=document.getElementById("bslGrid");grid.innerHTML="";
-  const u=UI[selectedLang]||UI.en;
-  BSL_LEVELS.forEach(b=>{
-    const name=b.names[selectedLang]||b.names.en;
-    const desc=(u.bsl_desc&&u.bsl_desc["bsl"+b.level])||"";
-    const btn=document.createElement("button");
-    btn.className=`option-btn ${b.cssClass}`+(selectedBSL===b.id?" selected":"");
-    btn.innerHTML=`<span class="option-icon">${b.icon}</span><span class="option-name">${name}</span><span class="option-desc">${desc}</span>`;
-    btn.onclick=()=>{selectedBSL=b.id;buildBSLGrid();};
-    grid.appendChild(btn);
-  });
+ const grid=document.getElementById("bslGrid");grid.innerHTML="";
+ const u=UI[selectedLang]||UI.en;
+ BSL_LEVELS.forEach(b=>{
+  const name=b.names[selectedLang]||b.names.en;
+  const desc=(u.bsl_desc&&u.bsl_desc["bsl"+b.level])||"";
+  const btn=document.createElement("button");
+  btn.className=`option-btn ${b.cssClass}`+(selectedBSL===b.id?" selected":"");
+  btn.innerHTML=`<span class="option-icon">${b.icon}</span><span class="option-name">${name}</span><span class="option-desc">${desc}</span>`;
+  btn.onclick=()=>{selectedBSL=b.id;buildBSLGrid();};
+  grid.appendChild(btn);
+ });
 }
 
 function generateSOP(){
-  const u=UI[selectedLang]||UI.en;
-  const errBox=document.getElementById("errorBox");
-  errBox.classList.remove("visible");
-  if(!selectedSample){errBox.textContent=u.errNoSample;errBox.classList.add("visible");return;}
-  if(!selectedBSL){errBox.textContent=u.errNoBSL;errBox.classList.add("visible");return;}
+ const u=UI[selectedLang]||UI.en;
+ const errBox=document.getElementById("errorBox");
+ errBox.classList.remove("visible");
+ if(!selectedSample){errBox.textContent=u.errNoSample;errBox.classList.add("visible");return;}
+ if(!selectedBSL){errBox.textContent=u.errNoBSL;errBox.classList.add("visible");return;}
 
-  const sample=SAMPLE_TYPES.find(s=>s.id===selectedSample);
-  const bsl=BSL_LEVELS.find(b=>b.id===selectedBSL);
-  const institution=document.getElementById("institutionInput").value.trim()||"—";
-  const today=new Date().toISOString().split("T")[0];
-  const sampleName=sample.names[selectedLang]||sample.names.en;
-  const bslName=bsl.names[selectedLang]||bsl.names.en;
-  const ppeList=PPE_DATA[selectedBSL]||PPE_DATA.bsl2;
-  const pathogens=PATHOGENS[selectedBSL];
-  const doc=document.getElementById("sopDoc");
-  setText("sopToolbarTitle",u.toolbarTitle||"Biosafety SOP");
+ const sample=SAMPLE_TYPES.find(s=>s.id===selectedSample);
+ const bsl=BSL_LEVELS.find(b=>b.id===selectedBSL);
+ const institution=document.getElementById("institutionInput").value.trim()||"—";
+ const today=new Date().toISOString().split("T")[0];
+ const sampleName=sample.names[selectedLang]||sample.names.en;
+ const bslName=bsl.names[selectedLang]||bsl.names.en;
+ const ppeList=PPE_DATA[selectedBSL]||PPE_DATA.bsl2;
+ const pathogens=PATHOGENS[selectedBSL];
+ const doc=document.getElementById("sopDoc");
+ setText("sopToolbarTitle",u.toolbarTitle||"Biosafety SOP");
 
-  doc.innerHTML=`
-  <div class="sop-header-block">
-    <div class="sop-title">${u.sopTitle}</div>
-    <div class="sop-subtitle">${u.sopSubtitle} — ${bslName} — ${sampleName}</div>
-    <div class="sop-meta-grid">
-      <div class="sop-meta-item"><span class="sop-meta-label">${u.metaInstitution}</span><span class="sop-meta-value">${institution}</span></div>
-      <div class="sop-meta-item"><span class="sop-meta-label">${u.metaBSL}</span><span class="sop-meta-value">${bsl.icon} ${bslName}</span></div>
-      <div class="sop-meta-item"><span class="sop-meta-label">${u.metaSample}</span><span class="sop-meta-value">${sampleName}</span></div>
-      <div class="sop-meta-item"><span class="sop-meta-label">${u.metaDate}</span><span class="sop-meta-value">${today}</span></div>
-      <div class="sop-meta-item"><span class="sop-meta-label">${u.metaVersion}</span><span class="sop-meta-value">1.0 (Draft)</span></div>
-      <div class="sop-meta-item"><span class="sop-meta-label">${u.metaRef}</span><span class="sop-meta-value">WHO LBM 4th ed. 2020</span></div>
-    </div>
+ doc.innerHTML=`
+ <div class="sop-header-block">
+  <div class="sop-title">${u.sopTitle}</div>
+  <div class="sop-subtitle">${u.sopSubtitle} — ${bslName} — ${sampleName}</div>
+  <div class="sop-meta-grid">
+   <div class="sop-meta-item"><span class="sop-meta-label">${u.metaInstitution}</span><span class="sop-meta-value">${institution}</span></div>
+   <div class="sop-meta-item"><span class="sop-meta-label">${u.metaBSL}</span><span class="sop-meta-value">${bsl.icon} ${bslName}</span></div>
+   <div class="sop-meta-item"><span class="sop-meta-label">${u.metaSample}</span><span class="sop-meta-value">${sampleName}</span></div>
+   <div class="sop-meta-item"><span class="sop-meta-label">${u.metaDate}</span><span class="sop-meta-value">${today}</span></div>
+   <div class="sop-meta-item"><span class="sop-meta-label">${u.metaVersion}</span><span class="sop-meta-value">1.0 (Draft)</span></div>
+   <div class="sop-meta-item"><span class="sop-meta-label">${u.metaRef}</span><span class="sop-meta-value">WHO LBM 4th ed. 2020</span></div>
   </div>
-  <div class="sop-body">
-    <div class="sop-section"><div class="sop-section-body">
-      <div class="sop-warning danger"><span class="warn-icon">🚨</span><span><strong>${u.betaDisclaimer||"BETA — PRELIMINARY GUIDELINES ONLY."}</strong></span></div>
-      <div class="sop-warning caution"><span class="warn-icon">⚠️</span><span>${u.disclaimer}</span></div>
-      <div class="sop-warning info"><span class="warn-icon">🚫</span><span>${u.bsl3Warning}</span></div>
-    </div></div>
-    ${sopSection(1,"📋",u.sections.scope,buildScopeSection(u,sampleName,bslName,bsl,pathogens))}
-    ${sopSection(2,"🥽",u.sections.ppe,buildPPESection(u,ppeList))}
-    ${sopSection(3,"🚪",u.sections.access,buildAccessSection(u,bsl))}
-    ${sopSection(4,"🧴",u.sections.decon,buildDeconSection(u,bsl))}
-    ${sopSection(5,"⚠️",u.sections.spill,buildSpillSection(u,bsl))}
-    ${sopSection(6,"🗑️",u.sections.waste,buildWasteSection(u,bsl))}
-    ${sopSection(7,"🩺",u.sections.exposure,buildExposureSection(u))}
-    ${sopSection(8,"📚",u.sections.training,buildTrainingSection(u,bsl))}
-    ${sopSection(9,"✍️",u.sections.refs,buildRefsSection(u,institution,today))}
-  </div>`;
+ </div>
+ <div class="sop-body">
+  <div class="sop-section"><div class="sop-section-body">
+   <div class="sop-warning danger"><span class="warn-icon">🚨</span><span><strong>${u.betaDisclaimer||"BETA — PRELIMINARY GUIDELINES ONLY."}</strong></span></div>
+   <div class="sop-warning caution"><span class="warn-icon">⚠️</span><span>${u.disclaimer}</span></div>
+   <div class="sop-warning info"><span class="warn-icon">🚫</span><span>${u.bsl3Warning}</span></div>
+  </div></div>
+  ${sopSection(1,"📋",u.sections.scope,buildScopeSection(u,sampleName,bslName,bsl,pathogens))}
+  ${sopSection(2,"🥽",u.sections.ppe,buildPPESection(u,ppeList))}
+  ${sopSection(3,"🚪",u.sections.access,buildAccessSection(u,bsl))}
+  ${sopSection(4,"🧴",u.sections.decon,buildDeconSection(u,bsl))}
+  ${sopSection(5,"⚠️",u.sections.spill,buildSpillSection(u,bsl))}
+  ${sopSection(6,"🗑️",u.sections.waste,buildWasteSection(u,bsl))}
+  ${sopSection(7,"🩺",u.sections.exposure,buildExposureSection(u))}
+  ${sopSection(8,"📚",u.sections.training,buildTrainingSection(u,bsl))}
+  ${sopSection(9,"✍️",u.sections.refs,buildRefsSection(u,institution,today))}
+ </div>`;
 
-  document.getElementById("sopOutput").classList.add("visible");
-  document.getElementById("sopOutput").scrollIntoView({behavior:"smooth",block:"start"});
+ document.getElementById("sopOutput").classList.add("visible");
+ document.getElementById("sopOutput").scrollIntoView({behavior:"smooth",block:"start"});
 }
 
 function sopSection(num,icon,title,body){
-  return `<div class="sop-section">
-    <div class="sop-section-header">
-      <div class="sop-section-num">${num}</div>
-      <span class="sop-section-icon">${icon}</span>
-      <span class="sop-section-title">${title}</span>
-    </div>
-    <div class="sop-section-body">${body}</div>
-  </div>`;
+ return `<div class="sop-section">
+  <div class="sop-section-header">
+   <div class="sop-section-num">${num}</div>
+   <span class="sop-section-icon">${icon}</span>
+   <span class="sop-section-title">${title}</span>
+  </div>
+  <div class="sop-section-body">${body}</div>
+ </div>`;
 }
 
 function buildScopeSection(u,sampleName,bslName,bsl,pathogens){
-  const bslDesc=(u.bsl_desc&&u.bsl_desc["bsl"+bsl.level])||"";
-  const p=pathogens;
-  let pathogenHTML=`<p style="font-size:13px;color:var(--ink-3);margin-bottom:0.75rem"><strong>Reference pathogen list (WHO Risk Group ${bsl.level} — illustrative examples only).</strong> Always perform a site-specific risk assessment for your specific agents. Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank" style="color:var(--blue)">WHO LBM 4th ed., Annex 1</a>; BMBL 6th ed.</p>`;
-  pathogenHTML+=`<div class="pathogen-grid">`;
-  pathogenHTML+=`<div class="pathogen-card"><h4>🦠 Bacteria</h4><ul>${p.bacteria.map(x=>`<li>${x}</li>`).join("")}</ul></div>`;
-  if(p.viruses) pathogenHTML+=`<div class="pathogen-card"><h4>🔬 Viruses</h4><ul>${p.viruses.map(x=>`<li>${x}</li>`).join("")}</ul></div>`;
-  if(p.fungi) pathogenHTML+=`<div class="pathogen-card"><h4>🍄 Fungi / Yeasts</h4><ul>${p.fungi.map(x=>`<li>${x}</li>`).join("")}</ul></div>`;
-  if(p.parasites) pathogenHTML+=`<div class="pathogen-card"><h4>🔴 Parasites</h4><ul>${p.parasites.map(x=>`<li>${x}</li>`).join("")}</ul></div>`;
-  pathogenHTML+=`</div>`;
-  pathogenHTML+=`<div class="sop-warning caution"><span class="warn-icon">⚠️</span><span>${p.note}</span></div>`;
+ const bslDesc=(u.bsl_desc&&u.bsl_desc["bsl"+bsl.level])||"";
+ const p=pathogens;
+ let pathogenHTML=`<p style="font-size:13px;color:var(--ink-3);margin-bottom:0.75rem"><strong>Reference pathogen list (WHO Risk Group ${bsl.level} — illustrative examples only).</strong> Always perform a site-specific risk assessment for your specific agents. Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank" style="color:var(--blue)">WHO LBM 4th ed., Annex 1</a>; BMBL 6th ed.</p>`;
+ pathogenHTML+=`<div class="pathogen-grid">`;
+ pathogenHTML+=`<div class="pathogen-card"><h4>🦠 Bacteria</h4><ul>${p.bacteria.map(x=>`<li>${x}</li>`).join("")}</ul></div>`;
+ if(p.viruses) pathogenHTML+=`<div class="pathogen-card"><h4>🔬 Viruses</h4><ul>${p.viruses.map(x=>`<li>${x}</li>`).join("")}</ul></div>`;
+ if(p.fungi) pathogenHTML+=`<div class="pathogen-card"><h4>🍄 Fungi / Yeasts</h4><ul>${p.fungi.map(x=>`<li>${x}</li>`).join("")}</ul></div>`;
+ if(p.parasites) pathogenHTML+=`<div class="pathogen-card"><h4>🔴 Parasites</h4><ul>${p.parasites.map(x=>`<li>${x}</li>`).join("")}</ul></div>`;
+ pathogenHTML+=`</div>`;
+ pathogenHTML+=`<div class="sop-warning caution"><span class="warn-icon">⚠️</span><span>${p.note}</span></div>`;
 
-  return `
-    <p style="font-size:14px;color:var(--ink-2);line-height:1.7;margin-bottom:1rem">
-      This Standard Operating Procedure defines the minimum biosafety requirements for working with
-      <strong>${sampleName}</strong> samples at <strong>${bslName}</strong> containment,
-      in accordance with the <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank" style="color:var(--blue)">WHO Laboratory Biosafety Manual (4th edition, 2020)</a>.
-    </p>
-    <div class="sop-warning ${bsl.level===1?"ok":"info"}"><span class="warn-icon">${bsl.icon}</span>
-      <span><strong>${bslName}:</strong> ${bslDesc}</span>
-    </div>
-    <hr style="border:none;border-top:1px solid var(--rule);margin:1.25rem 0">
-    <p style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:0.75rem">Pathogen Reference List</p>
-    ${pathogenHTML}
-    <p class="sop-source">Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO Laboratory Biosafety Manual, 4th ed. (2020)</a>, Annex 1 — Risk Group Classification; Section 2 — Risk Assessment.</p>`;
+ return `
+  <p style="font-size:14px;color:var(--ink-2);line-height:1.7;margin-bottom:1rem">
+   This Standard Operating Procedure defines the minimum biosafety requirements for working with
+   <strong>${sampleName}</strong> samples at <strong>${bslName}</strong> containment,
+   in accordance with the <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank" style="color:var(--blue)">WHO Laboratory Biosafety Manual (4th edition, 2020)</a>.
+  </p>
+  <div class="sop-warning ${bsl.level===1?"ok":"info"}"><span class="warn-icon">${bsl.icon}</span>
+   <span><strong>${bslName}:</strong> ${bslDesc}</span>
+  </div>
+  <hr style="border:none;border-top:1px solid var(--rule);margin:1.25rem 0">
+  <p style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:0.75rem">Pathogen Reference List</p>
+  ${pathogenHTML}
+  <p class="sop-source">Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO Laboratory Biosafety Manual, 4th ed. (2020)</a>, Annex 1 — Risk Group Classification; Section 2 — Risk Assessment.</p>`;
 }
 
 function buildPPESection(u,ppeList){
-  const req=u.required||"Required";
-  const opt=u.optional||"Recommended";
-  const hdrs=u.ppe_table_headers||["PPE Item","Requirement","Notes"];
-  const rows=ppeList.map(p=>`<tr>
-    <td class="req">${p.item}</td>
-    <td>${p.req==="required"?`<span class="required-badge">${req}</span>`:`<span class="optional-badge">${opt}</span>`}</td>
-    <td style="font-size:12px;color:var(--ink-3)">${p.note}</td>
-  </tr>`).join("");
-  return `
-    <div class="sop-warning danger"><span class="warn-icon">🚨</span>
-      <span>All PPE must be donned before entering the laboratory and removed (in correct doffing order) before leaving. Never wear laboratory PPE in corridors, offices, cafeterias, or public areas. PPE is the <em>last</em> line of defence — engineering controls and safe practices take precedence.
-      Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank" style="color:inherit">WHO LBM 4th ed., §3.6</a>; <a href="https://www.who.int/publications/i/item/9789240011410" target="_blank" style="color:inherit">PPE Monograph</a>.</span></div>
-    <table class="sop-table">
-      <thead><tr>${hdrs.map(h=>`<th>${h}</th>`).join("")}</tr></thead>
-      <tbody>${rows}</tbody>
-    </table>
-    <p class="sop-source">Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM 4th ed. (2020), §3.6</a>; <a href="https://www.who.int/publications/i/item/9789240011410" target="_blank">WHO PPE Monograph</a>.</p>`;
+ const req=u.required||"Required";
+ const opt=u.optional||"Recommended";
+ const hdrs=u.ppe_table_headers||["PPE Item","Requirement","Notes"];
+ const rows=ppeList.map(p=>`<tr>
+  <td class="req">${p.item}</td>
+  <td>${p.req==="required"?`<span class="required-badge">${req}</span>`:`<span class="optional-badge">${opt}</span>`}</td>
+  <td style="font-size:12px;color:var(--ink-3)">${p.note}</td>
+ </tr>`).join("");
+ return `
+  <div class="sop-warning danger"><span class="warn-icon">🚨</span>
+   <span>All PPE must be donned before entering the laboratory and removed (in correct doffing order) before leaving. Never wear laboratory PPE in corridors, offices, cafeterias, or public areas. PPE is the <em>last</em> line of defence — engineering controls and safe practices take precedence.
+   Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank" style="color:inherit">WHO LBM 4th ed., §3.6</a>; <a href="https://www.who.int/publications/i/item/9789240011410" target="_blank" style="color:inherit">PPE Monograph</a>.</span></div>
+  <table class="sop-table">
+   <thead><tr>${hdrs.map(h=>`<th>${h}</th>`).join("")}</tr></thead>
+   <tbody>${rows}</tbody>
+  </table>
+  <p class="sop-source">Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM 4th ed. (2020), §3.6</a>; <a href="https://www.who.int/publications/i/item/9789240011410" target="_blank">WHO PPE Monograph</a>.</p>`;
 }
 
 function buildAccessSection(u,bsl){
-  return `
-    <ul class="sop-steps">
-      <li class="sop-step"><span class="sop-step-num">1</span><span class="sop-step-text">Only trained and authorized personnel may enter during work with infectious materials.</span></li>
-      <li class="sop-step"><span class="sop-step-num">2</span><span class="sop-step-text">Post the universal biohazard symbol on all laboratory entry doors. Include emergency contact numbers and entry requirements on the door notice.</span></li>
-      <li class="sop-step"><span class="sop-step-num">3</span><span class="sop-step-text">Unauthorized visitors must not enter without direct supervision. Visitors with increased susceptibility (immunocompromised, pregnant) should only enter after institutional risk assessment approval.</span></li>
-      <li class="sop-step"><span class="sop-step-num">4</span><span class="sop-step-text">Food, drink, smoking, and application of cosmetics are strictly prohibited in the laboratory at all times.</span></li>
-      <li class="sop-step"><span class="sop-step-num">5</span><span class="sop-step-text">Mouth pipetting is strictly prohibited. Mechanical pipetting aids must be used at all times.</span></li>
-      ${bsl.level>=2?`<li class="sop-step"><span class="sop-step-num">6</span><span class="sop-step-text">All procedures with aerosol or splash potential must be performed in a certified Class II Biosafety Cabinet (BSC) or equivalent engineering control. BSC certification must be current (annually, or after HEPA filter replacement or relocation). Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM 4th ed., Chapter 6</a>.</span></li>`:""}
-      <li class="sop-step"><span class="sop-step-num">${bsl.level>=2?"7":"6"}</span><span class="sop-step-text">Sharps (needles, scalpels, broken glass) must be placed immediately into puncture-resistant sharps containers. Never recap needles by hand. Never overfill sharps containers beyond indicated capacity line.</span></li>
-    </ul>
-    <p class="sop-source">Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM 4th ed. (2020), §3.1 — Good Microbiological Practice; §3.3 — Facility Design</a>.</p>`;
+ return `
+  <ul class="sop-steps">
+   <li class="sop-step"><span class="sop-step-num">1</span><span class="sop-step-text">Only trained and authorized personnel may enter during work with infectious materials.</span></li>
+   <li class="sop-step"><span class="sop-step-num">2</span><span class="sop-step-text">Post the universal biohazard symbol on all laboratory entry doors. Include emergency contact numbers and entry requirements on the door notice.</span></li>
+   <li class="sop-step"><span class="sop-step-num">3</span><span class="sop-step-text">Unauthorized visitors must not enter without direct supervision. Visitors with increased susceptibility (immunocompromised, pregnant) should only enter after institutional risk assessment approval.</span></li>
+   <li class="sop-step"><span class="sop-step-num">4</span><span class="sop-step-text">Food, drink, smoking, and application of cosmetics are strictly prohibited in the laboratory at all times.</span></li>
+   <li class="sop-step"><span class="sop-step-num">5</span><span class="sop-step-text">Mouth pipetting is strictly prohibited. Mechanical pipetting aids must be used at all times.</span></li>
+   ${bsl.level>=2?`<li class="sop-step"><span class="sop-step-num">6</span><span class="sop-step-text">All procedures with aerosol or splash potential must be performed in a certified Class II Biosafety Cabinet (BSC) or equivalent engineering control. BSC certification must be current (annually, or after HEPA filter replacement or relocation). Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM 4th ed., Chapter 6</a>.</span></li>`:""}
+   <li class="sop-step"><span class="sop-step-num">${bsl.level>=2?"7":"6"}</span><span class="sop-step-text">Sharps (needles, scalpels, broken glass) must be placed immediately into puncture-resistant sharps containers. Never recap needles by hand. Never overfill sharps containers beyond indicated capacity line.</span></li>
+  </ul>
+  <p class="sop-source">Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM 4th ed. (2020), §3.1 — Good Microbiological Practice; §3.3 — Facility Design</a>.</p>`;
 }
 
 function buildDeconSection(u,bsl){
-  const hdrs=u.decon_agents||["Agent","Concentration","Contact Time","Application"];
-  const rows=DECON_AGENTS.map(a=>`<tr>
-    <td class="req">${a.agent}</td>
-    <td>${a.conc}</td>
-    <td>${a.time}</td>
-    <td style="font-size:12px;color:var(--ink-3)">${a.use}</td>
-  </tr>`).join("");
-  return `
-    <div class="sop-warning caution"><span class="warn-icon">⚠️</span>
-      <span>Prepare disinfectant solutions fresh daily. Remove gross contamination from surfaces before applying chemical disinfectants — organic matter substantially reduces efficacy. Validate contact times for the specific disinfectant and target organisms used in your laboratory.
-      Source: <a href="https://www.who.int/publications/i/item/9789240011359" target="_blank" style="color:inherit">WHO Decontamination Monograph</a>.</span></div>
-    <table class="sop-table">
-      <thead><tr>${hdrs.map(h=>`<th>${h}</th>`).join("")}</tr></thead>
-      <tbody>${rows}</tbody>
-    </table>
-    <ul class="sop-steps" style="margin-top:1rem">
-      <li class="sop-step"><span class="sop-step-num">1</span><span class="sop-step-text">Decontaminate all work surfaces with 70% ethanol or appropriate disinfectant at the start and end of each work session.</span></li>
-      <li class="sop-step"><span class="sop-step-num">2</span><span class="sop-step-text">All liquid biological waste must be decontaminated (bleach to 0.1% final concentration with sufficient contact time, or autoclaved) before drain disposal.</span></li>
-      <li class="sop-step"><span class="sop-step-num">3</span><span class="sop-step-text">All contaminated solid labware must be autoclaved (121°C, minimum 15 min validated holding time) before cleaning or disposal. Confirm cycle completion via chemical and biological indicators per institutional policy.</span></li>
-      <li class="sop-step"><span class="sop-step-num">4</span><span class="sop-step-text">⚠️ NEVER autoclave bleach-treated waste, chemical waste, mercury, or radioactive material. Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM4, §3.1.1</a>.</span></li>
-    </ul>
-    <p class="sop-source">Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM 4th ed. (2020), §3.5</a>; <a href="https://www.who.int/publications/i/item/9789240011359" target="_blank">Decontamination Monograph</a>.</p>`;
+ const hdrs=u.decon_agents||["Agent","Concentration","Contact Time","Application"];
+ const rows=DECON_AGENTS.map(a=>`<tr>
+  <td class="req">${a.agent}</td>
+  <td>${a.conc}</td>
+  <td>${a.time}</td>
+  <td style="font-size:12px;color:var(--ink-3)">${a.use}</td>
+ </tr>`).join("");
+ return `
+  <div class="sop-warning caution"><span class="warn-icon">⚠️</span>
+   <span>Prepare disinfectant solutions fresh daily. Remove gross contamination from surfaces before applying chemical disinfectants — organic matter substantially reduces efficacy. Validate contact times for the specific disinfectant and target organisms used in your laboratory.
+   Source: <a href="https://www.who.int/publications/i/item/9789240011359" target="_blank" style="color:inherit">WHO Decontamination Monograph</a>.</span></div>
+  <table class="sop-table">
+   <thead><tr>${hdrs.map(h=>`<th>${h}</th>`).join("")}</tr></thead>
+   <tbody>${rows}</tbody>
+  </table>
+  <ul class="sop-steps" style="margin-top:1rem">
+   <li class="sop-step"><span class="sop-step-num">1</span><span class="sop-step-text">Decontaminate all work surfaces with 70% ethanol or appropriate disinfectant at the start and end of each work session.</span></li>
+   <li class="sop-step"><span class="sop-step-num">2</span><span class="sop-step-text">All liquid biological waste must be decontaminated (bleach to 0.1% final concentration with sufficient contact time, or autoclaved) before drain disposal.</span></li>
+   <li class="sop-step"><span class="sop-step-num">3</span><span class="sop-step-text">All contaminated solid labware must be autoclaved (121°C, minimum 15 min validated holding time) before cleaning or disposal. Confirm cycle completion via chemical and biological indicators per institutional policy.</span></li>
+   <li class="sop-step"><span class="sop-step-num">4</span><span class="sop-step-text">⚠️ NEVER autoclave bleach-treated waste, chemical waste, mercury, or radioactive material. Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM4, §3.1.1</a>.</span></li>
+  </ul>
+  <p class="sop-source">Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM 4th ed. (2020), §3.5</a>; <a href="https://www.who.int/publications/i/item/9789240011359" target="_blank">Decontamination Monograph</a>.</p>`;
 }
 
 function buildSpillSection(u,bsl){
-  return `
-    <div class="sop-warning danger"><span class="warn-icon">🚨</span>
-      <span>All staff must complete spill response training before working with infectious materials. A spill kit must be available in the laboratory at all times. Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank" style="color:inherit">WHO LBM 4th ed., §3.8</a>.</span></div>
-    <ul class="sop-steps">
-      <li class="sop-step"><span class="sop-step-num">1</span><span class="sop-step-text"><strong>Alert others immediately.</strong> Warn colleagues. Evacuate if the spill is large, involves volatile material, or the hazard level is unknown.</span></li>
-      <li class="sop-step"><span class="sop-step-num">2</span><span class="sop-step-text"><strong>Do not spread contamination.</strong> Remove contaminated PPE carefully at the laboratory entrance before leaving. Perform hand hygiene immediately.</span></li>
-      <li class="sop-step"><span class="sop-step-num">3</span><span class="sop-step-text"><strong>Don fresh PPE</strong> before re-entering the spill area — gloves, gown, and eye protection at minimum.</span></li>
-      <li class="sop-step"><span class="sop-step-num">4</span><span class="sop-step-text"><strong>Cover the spill</strong> with absorbent material. Apply disinfectant (0.5% sodium hypochlorite recommended) around the perimeter first, then over the spill.</span></li>
-      <li class="sop-step"><span class="sop-step-num">5</span><span class="sop-step-text"><strong>Allow adequate contact time</strong> per the validated disinfectant protocol for the specific agents involved. Do not disturb the spill during this period.</span></li>
-      <li class="sop-step"><span class="sop-step-num">6</span><span class="sop-step-text"><strong>Clean up</strong> using forceps, brush and dustpan — never bare hands. All cleanup materials go into biohazard waste bags or sharps containers as appropriate.</span></li>
-      <li class="sop-step"><span class="sop-step-num">7</span><span class="sop-step-text"><strong>Final wipe</strong> with fresh disinfectant. Allow to dry. Complete an incident report form. Report to laboratory supervisor.</span></li>
-      <li class="sop-step"><span class="sop-step-num">8</span><span class="sop-step-text"><strong>Broken glass:</strong> Never use bare hands. Use forceps, tongs, or a brush and dustpan. Place in a puncture-resistant sharps container immediately.</span></li>
-    </ul>
-    <p class="sop-source">Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM 4th ed. (2020), §3.8 — Emergency/Incident Response</a>.</p>`;
+ return `
+  <div class="sop-warning danger"><span class="warn-icon">🚨</span>
+   <span>All staff must complete spill response training before working with infectious materials. A spill kit must be available in the laboratory at all times. Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank" style="color:inherit">WHO LBM 4th ed., §3.8</a>.</span></div>
+  <ul class="sop-steps">
+   <li class="sop-step"><span class="sop-step-num">1</span><span class="sop-step-text"><strong>Alert others immediately.</strong> Warn colleagues. Evacuate if the spill is large, involves volatile material, or the hazard level is unknown.</span></li>
+   <li class="sop-step"><span class="sop-step-num">2</span><span class="sop-step-text"><strong>Do not spread contamination.</strong> Remove contaminated PPE carefully at the laboratory entrance before leaving. Perform hand hygiene immediately.</span></li>
+   <li class="sop-step"><span class="sop-step-num">3</span><span class="sop-step-text"><strong>Don fresh PPE</strong> before re-entering the spill area — gloves, gown, and eye protection at minimum.</span></li>
+   <li class="sop-step"><span class="sop-step-num">4</span><span class="sop-step-text"><strong>Cover the spill</strong> with absorbent material. Apply disinfectant (0.5% sodium hypochlorite recommended) around the perimeter first, then over the spill.</span></li>
+   <li class="sop-step"><span class="sop-step-num">5</span><span class="sop-step-text"><strong>Allow adequate contact time</strong> per the validated disinfectant protocol for the specific agents involved. Do not disturb the spill during this period.</span></li>
+   <li class="sop-step"><span class="sop-step-num">6</span><span class="sop-step-text"><strong>Clean up</strong> using forceps, brush and dustpan — never bare hands. All cleanup materials go into biohazard waste bags or sharps containers as appropriate.</span></li>
+   <li class="sop-step"><span class="sop-step-num">7</span><span class="sop-step-text"><strong>Final wipe</strong> with fresh disinfectant. Allow to dry. Complete an incident report form. Report to laboratory supervisor.</span></li>
+   <li class="sop-step"><span class="sop-step-num">8</span><span class="sop-step-text"><strong>Broken glass:</strong> Never use bare hands. Use forceps, tongs, or a brush and dustpan. Place in a puncture-resistant sharps container immediately.</span></li>
+  </ul>
+  <p class="sop-source">Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM 4th ed. (2020), §3.8 — Emergency/Incident Response</a>.</p>`;
 }
 
 function buildWasteSection(u,bsl){
-  return `
-    <div class="sop-warning caution"><span class="warn-icon">⚠️</span>
-      <span>All biological waste must be treated as potentially infectious regardless of BSL. Waste segregation begins at the point of generation. Local regulations may impose additional treatment and disposal requirements.
-      Source: <a href="https://www.who.int/publications/i/item/9789240011359" target="_blank" style="color:inherit">WHO Decontamination Monograph</a>.</span></div>
-    <table class="sop-table">
-      <thead><tr><th>Waste Category</th><th>Container</th><th>Required Treatment</th></tr></thead>
-      <tbody>
-        <tr><td class="req">Contaminated solid waste (gloves, tips, tubes, swabs)</td><td>Leak-proof biohazard bag in rigid secondary container</td><td>Autoclave 121°C / min. 15 min validated holding time, then dispose per local regulation; OR incinerate. Source: WHO Decon Monograph.</td></tr>
-        <tr><td class="req">Sharps (needles, lancets, scalpels, broken glass)</td><td>Puncture-resistant sharps container. Seal when reaching indicated capacity line — do not overfill.</td><td>Autoclave, then dispose per local regulation. NEVER recap needles by hand.</td></tr>
-        <tr><td class="req">Liquid biological waste</td><td>Sealed leak-proof container</td><td>Add sodium hypochlorite to 0.1–0.5% final concentration. Allow contact time per validated protocol. OR autoclave and drain per local regulation.</td></tr>
-        <tr><td class="req">Contaminated reusable labware</td><td>Secondary containment bin</td><td>Autoclave before washing. Do not wash or handle without prior validated decontamination.</td></tr>
-        <tr><td class="req">Live cultures / isolates / stocks</td><td>Sealed primary container in secondary</td><td>Autoclave or incinerate. Never dispose of live cultures in general waste or drain.</td></tr>
-      </tbody>
-    </table>
-    <p class="sop-source">Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM 4th ed. (2020), §3.5</a>; <a href="https://www.who.int/publications/i/item/9789240011359" target="_blank">Decontamination and Waste Management Monograph</a>.</p>`;
+ return `
+  <div class="sop-warning caution"><span class="warn-icon">⚠️</span>
+   <span>All biological waste must be treated as potentially infectious regardless of BSL. Waste segregation begins at the point of generation. Local regulations may impose additional treatment and disposal requirements.
+   Source: <a href="https://www.who.int/publications/i/item/9789240011359" target="_blank" style="color:inherit">WHO Decontamination Monograph</a>.</span></div>
+  <table class="sop-table">
+   <thead><tr><th>Waste Category</th><th>Container</th><th>Required Treatment</th></tr></thead>
+   <tbody>
+    <tr><td class="req">Contaminated solid waste (gloves, tips, tubes, swabs)</td><td>Leak-proof biohazard bag in rigid secondary container</td><td>Autoclave 121°C / min. 15 min validated holding time, then dispose per local regulation; OR incinerate. Source: WHO Decon Monograph.</td></tr>
+    <tr><td class="req">Sharps (needles, lancets, scalpels, broken glass)</td><td>Puncture-resistant sharps container. Seal when reaching indicated capacity line — do not overfill.</td><td>Autoclave, then dispose per local regulation. NEVER recap needles by hand.</td></tr>
+    <tr><td class="req">Liquid biological waste</td><td>Sealed leak-proof container</td><td>Add sodium hypochlorite to 0.1–0.5% final concentration. Allow contact time per validated protocol. OR autoclave and drain per local regulation.</td></tr>
+    <tr><td class="req">Contaminated reusable labware</td><td>Secondary containment bin</td><td>Autoclave before washing. Do not wash or handle without prior validated decontamination.</td></tr>
+    <tr><td class="req">Live cultures / isolates / stocks</td><td>Sealed primary container in secondary</td><td>Autoclave or incinerate. Never dispose of live cultures in general waste or drain.</td></tr>
+   </tbody>
+  </table>
+  <p class="sop-source">Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM 4th ed. (2020), §3.5</a>; <a href="https://www.who.int/publications/i/item/9789240011359" target="_blank">Decontamination and Waste Management Monograph</a>.</p>`;
 }
 
 function buildExposureSection(u){
-  return `
-    <div class="sop-warning danger"><span class="warn-icon">🚨</span>
-      <span>ALL exposure incidents — needle-stick injuries, splashes to eyes/skin/mouth, inhalation of aerosols, bites or scratches from infected animals — must be reported immediately. Do not delay first aid or medical attention to complete paperwork.
-      Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank" style="color:inherit">WHO LBM 4th ed., §3.8–3.9</a>.</span></div>
-    <ul class="sop-steps">
-      <li class="sop-step"><span class="sop-step-num">1</span><span class="sop-step-text"><strong>Skin exposure:</strong> Remove contaminated clothing immediately. Wash the exposed area thoroughly with soap and running water. Do not scrub — this can increase tissue damage and absorption. Duration per your occupational health service guidance.</span></li>
-      <li class="sop-step"><span class="sop-step-num">2</span><span class="sop-step-text"><strong>Eye or mucous membrane splash:</strong> Irrigate immediately with large volumes of clean water or sterile saline at a designated eyewash station for at least 15 minutes. Do not rub eyes. Remove contact lenses if present before or during irrigation. Source: ANSI Z358.1; verify with occupational health.</span></li>
-      <li class="sop-step"><span class="sop-step-num">3</span><span class="sop-step-text"><strong>Needle-stick or sharps injury:</strong> Encourage bleeding by gentle pressure — do NOT aggressively squeeze. Wash immediately and thoroughly with soap and running water. Do NOT suck the wound.</span></li>
-      <li class="sop-step"><span class="sop-step-num">4</span><span class="sop-step-text"><strong>Seek medical attention immediately.</strong> Go to occupational health or emergency department. Bring specific information: agent name, risk group, volume of exposure, route of exposure, and your vaccination status.</span></li>
-      <li class="sop-step"><span class="sop-step-num">5</span><span class="sop-step-text"><strong>Report the incident</strong> to your laboratory supervisor and institutional biosafety officer within the same working day. Never delay reporting.</span></li>
-      <li class="sop-step"><span class="sop-step-num">6</span><span class="sop-step-text"><strong>Document:</strong> Agent involved, concentration, volume of exposure, nature and route of exposure, first aid given, time, date, and circumstances. Retain a signed copy of the incident report in personnel files.</span></li>
-    </ul>
-    <div class="sop-warning info"><span class="warn-icon">ℹ️</span>
-      <span>Post emergency contact numbers visibly at the laboratory entrance: Biosafety Officer, Laboratory Supervisor, Occupational Health Clinic, Local Emergency Services (police/fire/ambulance).</span></div>
-    <p class="sop-source">Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM 4th ed. (2020), §3.8 — Emergency/Incident Response; §3.9 — Occupational Health</a>.</p>`;
+ return `
+  <div class="sop-warning danger"><span class="warn-icon">🚨</span>
+   <span>ALL exposure incidents — needle-stick injuries, splashes to eyes/skin/mouth, inhalation of aerosols, bites or scratches from infected animals — must be reported immediately. Do not delay first aid or medical attention to complete paperwork.
+   Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank" style="color:inherit">WHO LBM 4th ed., §3.8–3.9</a>.</span></div>
+  <ul class="sop-steps">
+   <li class="sop-step"><span class="sop-step-num">1</span><span class="sop-step-text"><strong>Skin exposure:</strong> Remove contaminated clothing immediately. Wash the exposed area thoroughly with soap and running water. Do not scrub — this can increase tissue damage and absorption. Duration per your occupational health service guidance.</span></li>
+   <li class="sop-step"><span class="sop-step-num">2</span><span class="sop-step-text"><strong>Eye or mucous membrane splash:</strong> Irrigate immediately with large volumes of clean water or sterile saline at a designated eyewash station for at least 15 minutes. Do not rub eyes. Remove contact lenses if present before or during irrigation. Source: ANSI Z358.1; verify with occupational health.</span></li>
+   <li class="sop-step"><span class="sop-step-num">3</span><span class="sop-step-text"><strong>Needle-stick or sharps injury:</strong> Encourage bleeding by gentle pressure — do NOT aggressively squeeze. Wash immediately and thoroughly with soap and running water. Do NOT suck the wound.</span></li>
+   <li class="sop-step"><span class="sop-step-num">4</span><span class="sop-step-text"><strong>Seek medical attention immediately.</strong> Go to occupational health or emergency department. Bring specific information: agent name, risk group, volume of exposure, route of exposure, and your vaccination status.</span></li>
+   <li class="sop-step"><span class="sop-step-num">5</span><span class="sop-step-text"><strong>Report the incident</strong> to your laboratory supervisor and institutional biosafety officer within the same working day. Never delay reporting.</span></li>
+   <li class="sop-step"><span class="sop-step-num">6</span><span class="sop-step-text"><strong>Document:</strong> Agent involved, concentration, volume of exposure, nature and route of exposure, first aid given, time, date, and circumstances. Retain a signed copy of the incident report in personnel files.</span></li>
+  </ul>
+  <div class="sop-warning info"><span class="warn-icon">ℹ️</span>
+   <span>Post emergency contact numbers visibly at the laboratory entrance: Biosafety Officer, Laboratory Supervisor, Occupational Health Clinic, Local Emergency Services (police/fire/ambulance).</span></div>
+  <p class="sop-source">Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM 4th ed. (2020), §3.8 — Emergency/Incident Response; §3.9 — Occupational Health</a>.</p>`;
 }
 
 function buildTrainingSection(u,bsl){
-  return `
-    <div class="sop-warning ok"><span class="warn-icon">✓</span>
-      <span>All laboratory personnel must complete documented training and demonstrate competence before working independently with infectious materials. Training records must be current and maintained in personnel files.
-      Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank" style="color:inherit">WHO LBM 4th ed., §3.2</a>.</span></div>
-    <ul class="sop-steps">
-      <li class="sop-step"><span class="sop-step-num">1</span><span class="sop-step-text"><strong>Biosafety induction:</strong> All new staff complete laboratory-specific induction before starting work. Topics: risk assessment, PPE donning/doffing, emergency procedures, waste segregation, exposure response, and this SOP.</span></li>
-      <li class="sop-step"><span class="sop-step-num">2</span><span class="sop-step-text"><strong>SOP training:</strong> Staff must read, understand, and sign this SOP (with date) before working independently. Supervisor verifies and documents comprehension. A copy is retained in personnel files.</span></li>
-      <li class="sop-step"><span class="sop-step-num">3</span><span class="sop-step-text"><strong>Annual refresher:</strong> All staff complete annual biosafety refresher training. Training completion records are maintained and accessible for audit.</span></li>
-      <li class="sop-step"><span class="sop-step-num">4</span><span class="sop-step-text"><strong>Spill response drill:</strong> Conduct simulated spill response exercises at intervals defined by your institutional biosafety policy.</span></li>
-      ${bsl.level>=2?`<li class="sop-step"><span class="sop-step-num">5</span><span class="sop-step-text"><strong>Biosafety cabinet (BSC) training:</strong> All BSC users must receive documented training in correct BSC technique, decontamination procedures, and verification that BSC certification is current before first use. Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM 4th ed., Chapter 6</a>.</span></li>`:""}
-    </ul>
-    <p class="sop-source">Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM 4th ed. (2020), §3.2 — Personnel Competence and Training</a>.</p>`;
+ return `
+  <div class="sop-warning ok"><span class="warn-icon">✓</span>
+   <span>All laboratory personnel must complete documented training and demonstrate competence before working independently with infectious materials. Training records must be current and maintained in personnel files.
+   Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank" style="color:inherit">WHO LBM 4th ed., §3.2</a>.</span></div>
+  <ul class="sop-steps">
+   <li class="sop-step"><span class="sop-step-num">1</span><span class="sop-step-text"><strong>Biosafety induction:</strong> All new staff complete laboratory-specific induction before starting work. Topics: risk assessment, PPE donning/doffing, emergency procedures, waste segregation, exposure response, and this SOP.</span></li>
+   <li class="sop-step"><span class="sop-step-num">2</span><span class="sop-step-text"><strong>SOP training:</strong> Staff must read, understand, and sign this SOP (with date) before working independently. Supervisor verifies and documents comprehension. A copy is retained in personnel files.</span></li>
+   <li class="sop-step"><span class="sop-step-num">3</span><span class="sop-step-text"><strong>Annual refresher:</strong> All staff complete annual biosafety refresher training. Training completion records are maintained and accessible for audit.</span></li>
+   <li class="sop-step"><span class="sop-step-num">4</span><span class="sop-step-text"><strong>Spill response drill:</strong> Conduct simulated spill response exercises at intervals defined by your institutional biosafety policy.</span></li>
+   ${bsl.level>=2?`<li class="sop-step"><span class="sop-step-num">5</span><span class="sop-step-text"><strong>Biosafety cabinet (BSC) training:</strong> All BSC users must receive documented training in correct BSC technique, decontamination procedures, and verification that BSC certification is current before first use. Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM 4th ed., Chapter 6</a>.</span></li>`:""}
+  </ul>
+  <p class="sop-source">Source: <a href="https://www.who.int/publications/i/item/9789240011311" target="_blank">WHO LBM 4th ed. (2020), §3.2 — Personnel Competence and Training</a>.</p>`;
 }
 
 function buildRefsSection(u,institution,today){
-  return `
-    <div class="sop-warning danger"><span class="warn-icon">🚨</span>
-      <span>This document was generated as a preliminary draft by an automated tool (BiosafetySOP — SciVoice, bhaley1.github.io/scivoice). <strong>It must be reviewed, adapted to your specific agents and procedures, and formally approved by a qualified biosafety officer and laboratory director before use.</strong> The generating tool does not replace institutional biosafety review, regulatory compliance, or professional oversight.</span></div>
-    <div style="margin-bottom:1.5rem">
-      <p style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:0.75rem">References</p>
-      <ul style="list-style:none;font-size:13px;color:var(--ink-2);line-height:2.2">
-        <li>1. World Health Organization. <em>Laboratory Biosafety Manual, 4th edition.</em> Geneva: WHO; 2020. <a href="https://www.who.int/publications/i/item/9789240011311" style="color:var(--blue)" target="_blank">→ Core document</a></li>
-        <li>2. World Health Organization. <em>Decontamination and Waste Management</em> [LBM4 Monograph]. Geneva: WHO; 2020. <a href="https://www.who.int/publications/i/item/9789240011359" style="color:var(--blue)" target="_blank">→ Decon Monograph</a></li>
-        <li>3. World Health Organization. <em>Personal Protective Equipment</em> [LBM4 Monograph]. Geneva: WHO; 2020. <a href="https://www.who.int/publications/i/item/9789240011410" style="color:var(--blue)" target="_blank">→ PPE Monograph</a></li>
-        <li>4. World Health Organization. <em>Risk Assessment</em> [LBM4 Monograph]. Geneva: WHO; 2020. <a href="https://www.who.int/publications/i/item/9789240011458" style="color:var(--blue)" target="_blank">→ Risk Assessment Monograph</a></li>
-        <li>5. U.S. CDC/NIH. <em>Biosafety in Microbiological and Biomedical Laboratories (BMBL), 6th edition.</em> 2020. <a href="https://www.cdc.gov/labs/BMBL.html" style="color:var(--blue)" target="_blank">→ BMBL 6th ed.</a></li>
-      </ul>
-    </div>
-    <div style="margin-bottom:1.5rem">
-      <p style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:0.75rem">Document Control</p>
-      <table class="sop-table" style="width:auto">
-        <tbody>
-          <tr><td style="font-weight:500">Document Date</td><td>${today}</td></tr>
-          <tr><td style="font-weight:500">Version</td><td>1.0 (Draft — Pending Biosafety Officer Approval)</td></tr>
-          <tr><td style="font-weight:500">Review Due</td><td>Annual review required; review immediately upon change in agents, procedures, or regulations</td></tr>
-          <tr><td style="font-weight:500">Generated by</td><td>BiosafetySOP Beta — SciVoice (bhaley1.github.io/scivoice). For orientation only.</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="sig-grid">
-      <div class="sig-item"><div class="sig-label">${u.sig_preparedBy||"Prepared by"}</div></div>
-      <div class="sig-item"><div class="sig-label">${u.sig_reviewedBy||"Reviewed by (Biosafety Officer)"}</div></div>
-      <div class="sig-item"><div class="sig-label">${u.sig_approvedBy||"Approved by (Lab Director)"}</div></div>
-      <div class="sig-item"><div class="sig-label">${u.sig_date||"Date"}</div></div>
-    </div>`;
+ return `
+  <div class="sop-warning danger"><span class="warn-icon">🚨</span>
+   <span>This document was generated as a preliminary draft by an automated tool (BiosafetySOP — SciVoice, Anonymous.github.io/scivoice). <strong>It must be reviewed, adapted to your specific agents and procedures, and formally approved by a qualified biosafety officer and laboratory director before use.</strong> The generating tool does not replace institutional biosafety review, regulatory compliance, or professional oversight.</span></div>
+  <div style="margin-bottom:1.5rem">
+   <p style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:0.75rem">References</p>
+   <ul style="list-style:none;font-size:13px;color:var(--ink-2);line-height:2.2">
+    <li>1. World Health Organization. <em>Laboratory Biosafety Manual, 4th edition.</em> Geneva: WHO; 2020. <a href="https://www.who.int/publications/i/item/9789240011311" style="color:var(--blue)" target="_blank">→ Core document</a></li>
+    <li>2. World Health Organization. <em>Decontamination and Waste Management</em> [LBM4 Monograph]. Geneva: WHO; 2020. <a href="https://www.who.int/publications/i/item/9789240011359" style="color:var(--blue)" target="_blank">→ Decon Monograph</a></li>
+    <li>3. World Health Organization. <em>Personal Protective Equipment</em> [LBM4 Monograph]. Geneva: WHO; 2020. <a href="https://www.who.int/publications/i/item/9789240011410" style="color:var(--blue)" target="_blank">→ PPE Monograph</a></li>
+    <li>4. World Health Organization. <em>Risk Assessment</em> [LBM4 Monograph]. Geneva: WHO; 2020. <a href="https://www.who.int/publications/i/item/9789240011458" style="color:var(--blue)" target="_blank">→ Risk Assessment Monograph</a></li>
+    <li>5. U.S. CDC/NIH. <em>Biosafety in Microbiological and Biomedical Laboratories (BMBL), 6th edition.</em> 2020. <a href="https://www.cdc.gov/labs/BMBL.html" style="color:var(--blue)" target="_blank">→ BMBL 6th ed.</a></li>
+   </ul>
+  </div>
+  <div style="margin-bottom:1.5rem">
+   <p style="font-size:14px;font-weight:600;color:var(--ink);margin-bottom:0.75rem">Document Control</p>
+   <table class="sop-table" style="width:auto">
+    <tbody>
+     <tr><td style="font-weight:500">Document Date</td><td>${today}</td></tr>
+     <tr><td style="font-weight:500">Version</td><td>1.0 (Draft — Pending Biosafety Officer Approval)</td></tr>
+     <tr><td style="font-weight:500">Review Due</td><td>Annual review required; review immediately upon change in agents, procedures, or regulations</td></tr>
+     <tr><td style="font-weight:500">Generated by</td><td>BiosafetySOP Beta — SciVoice (Anonymous.github.io/scivoice). For orientation only.</td></tr>
+    </tbody>
+   </table>
+  </div>
+  <div class="sig-grid">
+   <div class="sig-item"><div class="sig-label">${u.sig_preparedBy||"Prepared by"}</div></div>
+   <div class="sig-item"><div class="sig-label">${u.sig_reviewedBy||"Reviewed by (Biosafety Officer)"}</div></div>
+   <div class="sig-item"><div class="sig-label">${u.sig_approvedBy||"Approved by (Lab Director)"}</div></div>
+   <div class="sig-item"><div class="sig-label">${u.sig_date||"Date"}</div></div>
+  </div>`;
 }
 
 function copySOPText(){
-  const text=document.getElementById("sopDoc")?.innerText||"";
-  navigator.clipboard.writeText(text).then(()=>{
-    const btn=document.getElementById("btnCopy");
-    const u=UI[selectedLang]||UI.en;
-    btn.textContent=u.copyDone||"Copied!";
-    setTimeout(()=>btn.textContent=u.copyBtn||"Copy as text",2000);
-  });
+ const text=document.getElementById("sopDoc")?.innerText||"";
+ navigator.clipboard.writeText(text).then(()=>{
+  const btn=document.getElementById("btnCopy");
+  const u=UI[selectedLang]||UI.en;
+  btn.textContent=u.copyDone||"Copied!";
+  setTimeout(()=>btn.textContent=u.copyBtn||"Copy as text",2000);
+ });
 }
 
 buildPicker();
